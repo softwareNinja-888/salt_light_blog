@@ -12,6 +12,9 @@ export function NewsLetter(){
                 <div className="">
                     <SubscriptionForm/>
                 </div>
+                <div className="my-24">
+                    <Line/>
+                </div>
             </div>
         </>
     )
