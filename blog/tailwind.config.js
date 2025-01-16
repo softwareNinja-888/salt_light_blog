@@ -20,7 +20,7 @@ export default {
       backgroundImage: {  
       },
       backgroundColor: {
-        'theme': ''
+        'theme': '#222222'
       },
       colors: {
         secondary : ''

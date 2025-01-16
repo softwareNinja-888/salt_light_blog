@@ -1,14 +1,20 @@
 import { useTheme } from './ThemeContext';
+import { HamburgerMenu } from './HamburgerMenu'
+
+import menu from '/light/menuLight.webp';
 
 
 export function Header(){
 
-	  const { theme, toggleTheme } = useTheme();
+	  const { theme, toggleTheme, menuOpen,setMenuOpen} = useTheme();
 
 	return (
 		<>
-			<h1 className="text-6xl dark:text-white">Hello World</h1>
-			<button className="dark:text-white" onClick={toggleTheme}>Toggle {theme}</button>
+			<div className="">
+                <img src={menu} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
+                {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
+            </div>			
+            <button className="dark:text-white" onClick={toggleTheme}>Toggle {theme}</button>
 		</>
 		)
 }

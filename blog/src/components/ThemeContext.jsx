@@ -6,6 +6,7 @@ const ThemeContext = createContext();
 // Create a provider component
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
+  const [menuOpen,setMenuOpen] = useState(false)
 
   // Load theme from localStorage on initial load
   useEffect(() => {
@@ -26,7 +27,7 @@ export const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme,menuOpen,setMenuOpen }}>
       {children}
     </ThemeContext.Provider>
   );
