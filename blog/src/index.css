@@ -34,7 +34,7 @@
 }
 @font-face{
     font-family: 'fira';
-    src: url('./assets/fonts/Fira_Sans/Fira_Sans-Regular.ttf')  format("truetype");
+    src: url('./assets/fonts/FiraSans-Regular.ttf')  format("truetype");
     font-weight: normal;
     font-style: normal;
 }
