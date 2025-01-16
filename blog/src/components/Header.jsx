@@ -1,12 +1,13 @@
 import { useTheme } from './ThemeContext';
 import { HamburgerMenu } from './HamburgerMenu'
+import { ThemeToggle } from './ToggleTheme';
 
 import menu from '/light/menuLight.webp';
 
 
 export function Header(){
 
-	  const { theme, toggleTheme, menuOpen,setMenuOpen} = useTheme();
+	  const {  menuOpen,setMenuOpen} = useTheme();
 
 	return (
 		<>
@@ -14,7 +15,7 @@ export function Header(){
                 <img src={menu} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
                 {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
             </div>			
-            <button className="dark:text-white" onClick={toggleTheme}>Toggle {theme}</button>
+            <ThemeToggle/>
 		</>
 		)
 }

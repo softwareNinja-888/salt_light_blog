@@ -31,8 +31,6 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
     return theme === 'light' ? xLight : xDark;
   }
 
-console.log(
-  handleImg())
   // Animation variants for menu
   const menuVariants = {
     open: {
