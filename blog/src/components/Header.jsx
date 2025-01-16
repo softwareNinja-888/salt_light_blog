@@ -21,7 +21,7 @@ export function Header(){
 				<ThemeToggle/>
 				<Line direction={'vertical'}/>
 				<div className="mr-4">
-            	    <img src={theme === 'light' ? menuDark : menuDark} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
+            	    <img src={theme === 'light' ? menuLight : menuDark} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
             	    {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
             	</div>			
 				

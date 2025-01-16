@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Body } from './components/Body'
 
 
 import { useTheme } from './components/ThemeContext';
@@ -17,6 +18,7 @@ function App() {
       <div className="bg-white h-screen w-screen dark:bg-theme">
         <Header/>
         <Hero/>
+        <Body/>
       </div>
 
     </>
