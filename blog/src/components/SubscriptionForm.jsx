@@ -11,8 +11,8 @@ export function SubscriptionForm() {
   };
 
   return (
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email" className="block text-gray-700 mb-1">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-10/12 m-auto mt-12 ">
+        <label htmlFor="email" className="block text-gray-700 font-nunito text-sm dark:text-white">
           Enter your email *
         </label>
         <input
@@ -21,12 +21,12 @@ export function SubscriptionForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email"
-          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full px-3 py-2 border-b border-b-black rounded focus:outline-none focus:ring-2 focus:ring-purple-700 text-black"
           required
         />
         <button
           type="submit"
-          className="w-full mt-3 bg-purple-600 text-white py-2 rounded font-semibold hover:bg-purple-700"
+          className="w-full mt-3 bg-purple-600 text-white py-2 rounded font-lora hover:bg-purple-700 "
         >
           Subscribe
         </button>
@@ -38,8 +38,8 @@ export function SubscriptionForm() {
             onChange={() => setSubscribed(!subscribed)}
             className="mr-2"
           />
-          <label htmlFor="subscribe-newsletter" className="text-sm text-gray-700">
-            Yes, subscribe me to your newsletter.
+          <label htmlFor="subscribe-newsletter" className="text-sm text-gray-700 font-geist dark:text-white">
+            Yes, subscribe me to newsletter.
           </label>
         </div>
       </form>
