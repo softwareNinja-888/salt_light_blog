@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
-import modeLight from "/light/modeLight.png"; // Placeholder
-import modeDark from "/dark/modeDark2.png"; // Placeholder
+import modeLight from "/light/modeLight.png"; 
+import modeDark from "/dark/modeDark2.png"; 
 
 import { useTheme } from './ThemeContext';
 
@@ -15,7 +15,7 @@ const { theme, toggleTheme} = useTheme();
   return (
     <motion.button
       onClick={toggleTheme}
-      className="w-12 h-12 flex items-center justify-center rounded-full shadow-lg"
+      className="w-12 h-12 flex items-center justify-center rounded "
       whileTap={{ scale: 0.8 }}
       whileHover={{ scale: 1.1 }}
     >

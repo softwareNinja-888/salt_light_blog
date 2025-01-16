@@ -1,21 +1,32 @@
 import { useTheme } from './ThemeContext';
 import { HamburgerMenu } from './HamburgerMenu'
+import { Line } from './Line';
 import { ThemeToggle } from './ToggleTheme';
 
-import menu from '/light/menuLight.webp';
+import logo from '/light/logoLight.webp'
+import menuLight from '/light/menuLight.webp';
+import menuDark from '/dark/menuDark.webp';
 
 
 export function Header(){
 
-	  const {  menuOpen,setMenuOpen} = useTheme();
+	  const {  theme,menuOpen,setMenuOpen} = useTheme();
 
 	return (
 		<>
-			<div className="">
-                <img src={menu} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
-                {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
-            </div>			
-            <ThemeToggle/>
+			<div className="flex justify-between items-center px-3 h-14">
+				<div className="">
+					<img src={logo} alt="logo" className="w-32" />
+				</div>
+				<ThemeToggle/>
+				<Line direction={'vertical'}/>
+				<div className="mr-4">
+            	    <img src={theme === 'light' ? menuDark : menuDark} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
+            	    {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
+            	</div>			
+				
+			</div>
+			<Line />
 		</>
 		)
 }
