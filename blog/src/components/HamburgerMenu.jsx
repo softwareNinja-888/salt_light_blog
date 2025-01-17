@@ -1,7 +1,6 @@
 import closeLight from '/light/closeLight.png'
 import closeDark from '/dark/closeDark.webp'
 
-
 import instaLight from '/light/instaLight.png'
 import xLight from '/light/xLight.png'
 import facebookLight from '/light/facebookLight.png'

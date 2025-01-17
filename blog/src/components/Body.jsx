@@ -12,6 +12,7 @@ export function Body(){
            <Blogs/>
            <About/>
            <FollowUs/>
+           
         </>
     )
 }

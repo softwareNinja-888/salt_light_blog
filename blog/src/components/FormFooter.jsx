@@ -73,7 +73,7 @@ export function FormFooter(){
 
             <button
               type="submit"
-              className="w-full mt-3 bg-purple-600 text-white py-2 rounded font-lora hover:bg-purple-700 "
+              className="w-full mt-3 bg-purple-600 text-white py-2 font-lora hover:bg-purple-700 "
             >
               Subscribe
             </button>
