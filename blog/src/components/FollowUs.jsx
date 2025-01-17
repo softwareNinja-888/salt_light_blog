@@ -12,6 +12,7 @@ import image9 from '/blog/churchF1.webp'
 
 import { useTheme } from './ThemeContext';
 import { SocialLinks } from './SocialLinks'
+import { Line } from './Line'
 
 import {v4 as uuidv4} from 'uuid'
 
@@ -30,6 +31,9 @@ export function FollowUs(){
                     })}
                 </div>
                 <SocialLinks/>
+            </div>
+            <div className="my-20">
+                <Line/>
             </div>
         </>
     )
