@@ -21,12 +21,26 @@ export default {
         blogBackground: 'url("/blog/churchC1.webp")' 
       },
       backgroundColor: {
-        'theme': '#222222'
+        'theme': '#000000'
       },
       colors: {
         secondary : ''
       }
     },
   },
-  plugins: [],
+   daisyui: {
+    themes: [
+      {
+        light: {
+          "primary": "#ffffff",
+        },
+        dark: {
+          "primary": "#000000",
+        }
+      }
+    ]
+  },
+  plugins: [
+    require('daisyui'),
+  ],
 }

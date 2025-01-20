@@ -1,6 +1,7 @@
 import { BlogItem } from "./BlogItem";
 import { BlogOfWeek } from "./BlogOfWeek";
 import { Header } from "./Header";
+import { SearchFilter } from "./SearchFilter";
 
 export function BlogDisplay(){
     return (
@@ -10,6 +11,9 @@ export function BlogDisplay(){
                 <div className="flex flex-col justify-center gap-5 items-center">
                     <div className="font-poppins mt-10">Salt & Light Blogs</div>
                     <BlogOfWeek/>
+                </div>
+                <div className="">
+                    {/*<SearchFilter/>*/}
                 </div>
 
             </div>

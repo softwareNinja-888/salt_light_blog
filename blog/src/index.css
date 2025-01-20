@@ -54,3 +54,7 @@
 input[type='search']::-webkit-search-cancel-button{
     display: none;
 }
+
+:root {
+  --p: oklch(95% 0 0);
+}

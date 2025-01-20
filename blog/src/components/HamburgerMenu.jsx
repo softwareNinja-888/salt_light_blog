@@ -25,9 +25,6 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
 
   const navigate = useNavigate()
 
-  // AUTH CONTEXT
-
-  // const {IsLoggedIn, login, logout,ActiveUser} = useAuth()
   const {user, login, logout} = useAuth()
   const {theme} = useTheme()
 
@@ -80,7 +77,7 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
         <img src={theme === 'light' ? closeLight : closeDark } onClick={() => setMenuOpen(false)} className="absolute top-10 right-10 text-2xl w-5" />
 
         {/* Links */}
-        <nav className="flex flex-col space-y-4 text-lg text-fontColor font-poppins items-center">
+        <nav className="flex flex-col space-y-4 text-lg font-poppins items-center">
           <div onClick={()=>{handleNavigation("/")}} className="dark:text-white hover:underline">Home</div>
           <div onClick={()=>{handleNavigation("/blogs")}}className="dark:text-white hover:underline">Blogs</div>
           <div onClick={()=>{handleNavigation("/donate")}} className="dark:text-white hover:underline">Donate</div>

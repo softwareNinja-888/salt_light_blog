@@ -3,6 +3,8 @@ import { HamburgerMenu } from './HamburgerMenu'
 import { Line } from './Line';
 import { ThemeToggle } from './ToggleTheme';
 
+import { useNavigate } from 'react-router'
+
 import logo from '/light/logoLight.webp'
 import menuLight from '/light/menuLight.webp';
 import menuDark from '/dark/menuDark.webp';
@@ -10,12 +12,17 @@ import menuDark from '/dark/menuDark.webp';
 
 export function Header(){
 
-	  const {  theme,menuOpen,setMenuOpen} = useTheme();
+	const {  theme,menuOpen,setMenuOpen} = useTheme();
+	const navigate = useNavigate()
+
+	function handleNav(path){
+		navigate(path)
+	}
 
 	return (
 		<>
 			<div className="flex justify-between items-center px-3 h-14">
-				<div className="">
+				<div className="" onClick={()=>{handleNav("/")}}>
 					<img src={logo} alt="logo" className="w-32" />
 				</div>
 				<ThemeToggle/>
