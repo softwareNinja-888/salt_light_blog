@@ -15,10 +15,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useAuth } from "./AuthContext"
 import { useTheme } from './ThemeContext';
+import { useNavigate } from 'react-router'
+
+
 
 // import { useNavigate } from "react-router-dom"
 
 export function HamburgerMenu({ menuOpen, setMenuOpen }){
+
+  const navigate = useNavigate()
 
   // AUTH CONTEXT
 
@@ -76,11 +81,10 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
 
         {/* Links */}
         <nav className="flex flex-col space-y-4 text-lg text-fontColor font-poppins items-center">
-          <div onClick={()=>{handleNavigation("/pages/blog")}} className="dark:text-white hover:underline">Blogs</div>
-          <div onClick={()=>{handleNavigation("/pages/events")}}className="dark:text-white hover:underline">Events</div>
-          <div onClick={()=>{handleNavigation("/pages/donate")}} className="dark:text-white hover:underline">Donate</div>
+          <div onClick={()=>{handleNavigation("/")}} className="dark:text-white hover:underline">Home</div>
+          <div onClick={()=>{handleNavigation("/blogs")}}className="dark:text-white hover:underline">Blogs</div>
+          <div onClick={()=>{handleNavigation("/donate")}} className="dark:text-white hover:underline">Donate</div>
           <div onClick={()=>{handleNavigation("/aboutus")}} className="dark:text-white hover:underline">About Us</div>
-          <div onClick={()=>{handleNavigation("/pages/churches")}} className="dark:text-white hover:underline">Churches</div>
           <div onClick={()=>{handleNavigation("/signup")}} className='dark:text-white'>Login/SignUp</div>
 {/*            {IsLoggedIn ? <div onClick={()=>{handleNavigation(`profile/${ActiveUser}`)}}>Profile</div>:
                           <>

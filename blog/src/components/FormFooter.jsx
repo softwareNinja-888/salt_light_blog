@@ -48,12 +48,12 @@ export function FormFooter(){
 
             {/* EMAIL */}
 
-            <label htmlFor="email" className="block text-gray-700 font-nunito text-sm dark:text-white">
+            <label htmlFor="emailFoot" className="block text-gray-700 font-nunito text-sm dark:text-white">
               Enter your email *
             </label>
             <input
               type="email"
-              id="email"
+              id="emailFoot"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email"
@@ -63,9 +63,9 @@ export function FormFooter(){
 
             {/* MESSAGE US  */}
 
-            {/* <label htmlFor="message" className="block text-gray-700 mt-3 mb-1 dark:text-white">
+            <label htmlFor="message" className="block text-gray-700 mt-3 mb-1 dark:text-white">
                 Write your message 
-            </label>  */}
+            </label> 
             <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Your message..." className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500 h-24 resize-none" >  
             </textarea>
 

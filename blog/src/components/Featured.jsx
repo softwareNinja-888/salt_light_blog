@@ -16,7 +16,7 @@ export function Featured(obj){
                             </div>
                             <div className="flex font-geist text-sm gap-2">
                                 <div className="">Mar 23, 2023</div>
-                                <div className=""> || </div>
+                                <div className=""> &#183;</div>
                                 <div className="">2 min read</div>
                             </div>
                         </div>
