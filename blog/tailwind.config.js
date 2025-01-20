@@ -17,7 +17,8 @@ export default {
         inter: ['inter','sans-serif'],
         roboto: ['roboto','sans-serif'],
       },
-      backgroundImage: {  
+      backgroundImage: { 
+        blogBackground: 'url("/blog/churchC1.webp")' 
       },
       backgroundColor: {
         'theme': '#222222'
