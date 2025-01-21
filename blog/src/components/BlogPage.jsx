@@ -7,28 +7,24 @@ import {Footer} from "./Footer"
 import {Line} from "./Line"
 import {SocialLinks} from "./SocialLinks"
 import {Quote} from "./Quote"
+import {Carousel} from './Carousel'
+
 
 import blogImg from '/blog/blogA1.webp'
 
-export function BlogPage(obj){
+export function BlogPage(){
 
     const [comment, setComment] = useState("");
 
 
     const {blog} = useParams()
-    console.log(blog)
+    // console.log(blog)
     return (
         <>
-            <div className="">
+            <div className="dark:text-white dark:bg-black">
                 <Header/>
-                <div className="w-screen bg-purple-600 text-white px-2 py-3 font-roboto mt-20">
-                    Post
-                </div>
-                <div className="flex justify-between px-2 py-2">
-                    All Post
-                    <img src="" alt="arrow"/>
-                </div>
-                <div className="mt-20">
+
+                <div className="mt-16">
                     <div className="flex justify-between px-3">
                         <div className="flex font-geist text-xs gap-2">
                             <div className="">Mar 23, 2023</div>
@@ -85,7 +81,8 @@ export function BlogPage(obj){
                     <Line/>
                 </div>
 
-                {/*CAROSEL POST */}
+                {/*CAROUSEL POST */}
+                <Carousel/>
 
                 {/*COMMENTS*/}
                 <div className="">
@@ -95,7 +92,7 @@ export function BlogPage(obj){
                         <Line/>
                     </div>
                     <div className="px-3 py-6"> 
-                        <textarea id="message" value={comment} onChange={(e) => setComment(e.target.value)} placeholder="Your comment..." className="w-full px-3 py-2 border border-black focus:border-none focus:outline-none focus:ring-2 focus:ring-purple-500 h-24 resize-none" >  
+                        <textarea id="comment" value={comment} onChange={(e) => setComment(e.target.value)} placeholder="Your comment..." className="w-full px-3 py-2 border border-black focus:border-none focus:outline-none focus:ring-2 focus:ring-purple-500 h-24 resize-none" >  
                         </textarea>
                     </div>
                 </div>
