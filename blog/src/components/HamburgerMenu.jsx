@@ -16,6 +16,8 @@ import { motion } from "framer-motion";
 import { useAuth } from "./AuthContext"
 import { useTheme } from './ThemeContext';
 import { useNavigate } from 'react-router'
+import { SocialLinks } from './SocialLinks';
+
 
 
 
@@ -89,21 +91,8 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
                           </>
             }  */}
         </nav>
-        <div className="flex space-x-4 mt-16 gap-5">
-          <a href="#" className="w-8">
-            <img src={ theme === 'light' ? facebookLight : facebookDark } alt="facebook logo" className="" /> 
-          </a>
-          <a href="#" className="w-8">
-            <img src={ theme === 'light' ? xLight : xDark} alt="x logo" className="w-20" />           
-          </a>
-          <a href="#" className="w-8">
-            <img src={theme === 'light' ? instaLight : instaDark} alt="insta logo" className="" />           
-          </a>
-          <a href="#" className="w-8">
-            <img src={theme === 'light' ? tiktokLight : tiktokDark} alt="insta logo" className="" />           
-          </a>
-        </div>
-      </motion.div>
+        <SocialLinks marginTop="mt-16"/>      
+        </motion.div>
     </>
   );
 };

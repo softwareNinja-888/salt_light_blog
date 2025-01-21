@@ -10,23 +10,23 @@ import xDark from '/dark/xDark.png'
 import facebookDark from '/dark/facebookDark.png'
 import tiktokDark from '/dark/tiktokDark.png'
 
-export function SocialLinks(){
+export function SocialLinks({width="w-6",marginTop="mt-2",position="center"}){
 
     const {theme}= useTheme()
 
     return (
         <>
-            <div className="flex justify-center space-x-4 mt-2 gap-5">
-                <a href="#" className="w-6">
+            <div className={`flex justify-${position} space-x-4 ${marginTop} gap-5`}>
+                <a href="#" className={`${width}`}>
                   <img src={ theme === 'light' ? facebookLight : facebookDark } alt="facebook logo" className="" /> 
                 </a>
-                <a href="#" className="w-6">
+                <a href="#" className={`${width}`}>
                   <img src={ theme === 'light' ? xLight : xDark} alt="x logo" className="w-20" />           
                 </a>
-                <a href="#" className="w-6">
+                <a href="#" className={`${width}`}>
                   <img src={theme === 'light' ? instaLight : instaDark} alt="insta logo" className="" />           
                 </a>
-                <a href="#" className="w-6">
+                <a href="#" className={`${width}`}>
                   <img src={theme === 'light' ? tiktokLight : tiktokDark} alt="insta logo" className="" />           
                 </a>
             </div>
