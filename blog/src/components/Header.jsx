@@ -5,7 +5,8 @@ import { ThemeToggle } from './ToggleTheme';
 
 import { useNavigate } from 'react-router'
 
-import logo from '/light/logoLight.webp'
+import fish from '/light/fish.webp'
+import logoDark from '/dark/logoDarkT.jpeg'
 import menuLight from '/light/menuLight.webp';
 import menuDark from '/dark/menuDark.png';
 
@@ -21,9 +22,12 @@ export function Header(){
 
 	return (
 		<>
-			<div className="flex justify-between items-center px-3 h-14">
-				<div className="" onClick={()=>{handleNav("/")}}>
-					<img src={logo} alt="logo" className="w-32" />
+			<div className="flex justify-between items-center px-3 h-16">
+				<div className="flex justify-center items-center gap-2 dark:text-white" onClick={()=>{handleNav("/")}}>
+					<div>
+						Salt&Light
+					</div>
+					<img src={fish} alt="fish symbol" className="w-5 h-5 self-center rotate-180"/>
 				</div>
 				<ThemeToggle/>
 				<Line direction={'vertical'}/>
