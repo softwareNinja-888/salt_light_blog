@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CheckBox } from "./CheckBox"
 
 export function SubscriptionForm() {
   const [email, setEmail] = useState("");
@@ -31,16 +32,7 @@ export function SubscriptionForm() {
           Subscribe
         </button>
         <div className="flex items-center mt-3">
-          <input
-            type="checkbox"
-            id="subscribe-newsletter"
-            checked={subscribed}
-            onChange={() => setSubscribed(!subscribed)}
-            className="mr-2"
-          />
-          <label htmlFor="subscribe-newsletter" className="text-sm text-gray-700 font-geist dark:text-white">
-            Yes, subscribe me to newsletter.
-          </label>
+          <CheckBox/>
         </div>
       </form>
   );

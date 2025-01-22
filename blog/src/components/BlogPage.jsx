@@ -1,5 +1,7 @@
 import { useParams } from "react-router"
 import { useState } from "react";
+import { useTheme } from './ThemeContext';
+
 
 import {Header} from "./Header"
 import {Footer} from "./Footer"
@@ -9,6 +11,9 @@ import {SocialLinks} from "./SocialLinks"
 import {Quote} from "./Quote"
 import {Carousel} from './Carousel'
 
+import dotLight from '/light/dotLight.png'
+import dotDark from '/dark/dotDark.png'
+
 
 import blogImg from '/blog/blogA1.webp'
 
@@ -17,21 +22,22 @@ export function BlogPage(){
     const [comment, setComment] = useState("");
 
 
-    const {blog} = useParams()
-    // console.log(blog)
+    const { blog } = useParams()
+    const { theme } = useTheme();
+
     return (
         <>
             <div className="dark:text-white dark:bg-black">
                 <Header/>
 
                 <div className="mt-16">
-                    <div className="flex justify-between px-3">
+                    <div className="flex justify-between items-center px-3">
                         <div className="flex font-geist text-xs gap-2">
                             <div className="">Mar 23, 2023</div>
                             <div className=""> &#183;</div>
                             <div className="">2 min read</div>
                         </div>
-                        <img src="" alt="menu"/>
+                        <img src={theme === 'light' ? dotLight : dotDark} alt="menu" className="max-h-5"/>
                     </div>
                     <div className="mt-8 px-3">
                         <div className="font-poppins text-2xl">The Power of Consistency: Your Key to Success</div>

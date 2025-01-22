@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import modeLight from "/light/modeLight.png"; 
-import modeDark from "/dark/modeDark2.png"; 
+import modeDark from "/dark/modeDark.png"; 
 
 import { useTheme } from './ThemeContext';
 

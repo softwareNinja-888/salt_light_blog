@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router'
 
 import logo from '/light/logoLight.webp'
 import menuLight from '/light/menuLight.webp';
-import menuDark from '/dark/menuDark.webp';
+import menuDark from '/dark/menuDark.png';
 
 
 export function Header(){
