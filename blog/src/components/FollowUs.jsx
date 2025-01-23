@@ -24,7 +24,7 @@ export function FollowUs(){
     return (
         <>
             <div className="flex flex-col w-10/12 justify-center m-auto mt-20 dark:text-white gap-10">
-                <div className="font-mono text-3xl underline">Follow Us </div>
+                <div className="font-mont text-3xl underline">Follow Us </div>
                 <div className="grid grid-cols-2 gap-3">
                     {arr.map(el=>{
                         return <img key={uuidv4()} src={el} alt='social image' className='h-20 w-32'/>

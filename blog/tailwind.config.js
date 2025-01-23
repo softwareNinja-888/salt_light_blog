@@ -13,7 +13,7 @@ export default {
         nunito: ['nunito','sans-serif'],
         poppins: ['poppins','sans-serif'],
         source: ['source','sans-serif'],
-        fira: ['fira','sans-serif'],
+        mont: ['mont','sans-serif'],
         inter: ['inter','sans-serif'],
         roboto: ['roboto','sans-serif'],
       },

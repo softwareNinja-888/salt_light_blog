@@ -14,7 +14,7 @@ export function BlogDisplay(){
                     <BlogOfWeek/>
                 </div>
                 <div className="flex flex-col items-center justify-center m-auto w-10/12 mt-20">
-                    <div className="font-mono text-3xl dark:text-white px-9 underline self-start">Blogs</div>
+                    <div className="font-mont text-3xl dark:text-white px-9 underline self-start">Blogs</div>
                     <BlogItem/>
                     <BlogItem/>
                     <BlogItem/>

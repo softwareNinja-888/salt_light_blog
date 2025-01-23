@@ -25,7 +25,7 @@ export function Header(){
 		<>
 			<div className="flex justify-between items-center px-3 h-16">
 				<div className="flex justify-center items-center gap-2 dark:text-white" onClick={()=>{handleNav("/")}}>
-					<div className="font-poppins">
+					<div className="font-inter text-xl">
 						Salt&Light
 					</div>
 					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/>
