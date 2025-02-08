@@ -8,7 +8,7 @@ export function Featured(obj){
                     <div className="font-mono text-lg border border-black dark:border-white w-7/12 px-2 py-1 text-center">Featured Post</div>
                     <div className="flex flex-col border border-black dark:border-white w-11/12 ">
                         <div className="">
-                            <img src={image} alt="blog image" className="h-52" />
+                            <img src={image} alt="blog image" className="h-60 w-full" />
                         </div>
                         <div className="p-3">
                             <div className="font-geist text-sm">

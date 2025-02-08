@@ -27,7 +27,7 @@ export function About(){
     return(
         <>
             <motion.div ref={ref} variants={containerVariants} initial="hidden" animate={isInView ? 'visible' : "hidden"}  className="flex flex-col w-10/12 justify-center m-auto mt-10 dark:text-white gap-10">
-                <motion.div variants={itemVariants} className="font-mont text-3xl underline">About Us</motion.div>
+                <motion.div id="about" variants={itemVariants} className="font-mont text-3xl underline">About Us</motion.div>
                 <motion.div variants={itemVariants} className="">
                     <img src={logo} alt="" className="" />
                 </motion.div>
