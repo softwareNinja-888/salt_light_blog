@@ -12,7 +12,7 @@ export function SubscriptionForm() {
   };
 
   return (
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-10/12 m-auto mt-12 ">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-10/12 md:w-5/12 m-auto mt-12 ">
         <label htmlFor="email" className="block text-gray-700 font-nunito text-sm dark:text-white">
           Enter your email *
         </label>

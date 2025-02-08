@@ -4,8 +4,8 @@ import { Line } from "./Line";
 export function Blogs(){
     return(
         <>
-            <div id="blogs" className="font-mont text-3xl dark:text-white px-9 underline">Top Picks</div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 ">
+            <div id="blogs" className="font-mont text-3xl dark:text-white px-9 underline">Blogs</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 ">
                 <BlogItem/>
                 <BlogItem/>
                 <BlogItem/>

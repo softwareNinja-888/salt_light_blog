@@ -23,7 +23,7 @@ export function BlogItem(obj){
                 <div className="flex flex-col gap-4 ml-6 mt-10 dark:text-white">
                     <div className="flex flex-col border border-black dark:border-white w-11/12 ">
                         <div className="">
-                            <img src={image} alt="blog image" className="h-52" />
+                            <img src={image} alt="blog image" className="h-60 w-full" />
                         </div>
                         <div className="p-3">
                             <div className="font-geist text-sm">

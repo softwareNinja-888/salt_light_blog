@@ -40,7 +40,7 @@ export function Header(){
             	    <img src={theme === 'light' ? menuLight : menuDark} onClick={() => setMenuOpen(!menuOpen)} className="w-5 " />
             	    {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
             	</div>			
-            	 <nav className="hidden md:flex space-x-20 text-sm text-black dark:text-white font-mont ">
+            	 <nav className="hidden md:flex md:space-x-10 lg:space-x-20 text-sm text-black dark:text-white font-mont ">
 
 	                <div className=" flex gap-1.5 no-underline relative cursor-pointer text-inherit after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 dark:hover:after:bg-white hover:after:bg-black text-base max-[500px]:text-xs" onClick={()=>{toSection('/blogs')}}>
 	                    Blogs
