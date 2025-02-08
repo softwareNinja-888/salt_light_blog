@@ -28,7 +28,7 @@ export function Header(){
 
 	return (
 		<>
-			<div className="flex justify-between md:justify-around items-center px-3 h-16">
+			<div className="flex justify-between md:justify-around items-center px-3 py-12 h-16">
 				<div className="flex justify-center items-center gap-2 dark:text-white" onClick={()=>{handleNav("/")}}>
 					<div className="font-mont text-xl">
 						Salt&Light
@@ -36,7 +36,6 @@ export function Header(){
 					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/>
 				</div>
 				<ThemeToggle/>
-				<Line direction={'vertical'} classStyle="md:hidden"/>
 				<div className="mr-4 md:hidden">
             	    <img src={theme === 'light' ? menuLight : menuDark} onClick={() => setMenuOpen(!menuOpen)} className="w-5 " />
             	    {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
