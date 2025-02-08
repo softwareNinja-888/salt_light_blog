@@ -1,0 +1,40 @@
+id num *
+title str *
+author str *
+date *
+summary str
+preview str
+quote boolean
+content str(markdown) *
+tags/categories
+social links
+views/reads
+likes
+comments
+
+
+blog0fWeek boolean
+time_of_reading mins num
+
+function createBlogPost(
+  title,
+  slug,
+  content,
+  authorId,
+  createdAt,
+  updatedAt,
+  publishedAt,
+  status
+) {
+  return {
+    post_id: null, // Auto-incrementing ID
+    title,
+    slug,
+    content,
+    author_id: authorId,
+    created_at: createdAt,
+    updated_at: updatedAt,
+    published_at: publishedAt,
+    status,
+  };
+}

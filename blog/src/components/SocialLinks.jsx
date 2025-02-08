@@ -1,14 +1,14 @@
 import { useTheme } from './ThemeContext';
 
-import instaLight from '/light/instaLight.png'
-import xLight from '/light/xLight.png'
-import facebookLight from '/light/facebookLight.png'
-import tiktokLight from '/light/tiktokLight.png'
+import instaLight from '/light/instaLight.avif'
+import xLight from '/light/xLight.avif'
+import facebookLight from '/light/facebookLight.avif'
+import tiktokLight from '/light/tiktokLight.avif'
 
-import instaDark from '/dark/instaDark.png'
-import xDark from '/dark/xDark.png'
-import facebookDark from '/dark/facebookDark.png'
-import tiktokDark from '/dark/tiktokDark.png'
+import instaDark from '/dark/instaDark.avif'
+import xDark from '/dark/xDark.avif'
+import facebookDark from '/dark/facebookDark.avif'
+import tiktokDark from '/dark/tiktokDark.avif'
 
 export function SocialLinks({width="w-6",marginTop="mt-2",position="center"}){
 

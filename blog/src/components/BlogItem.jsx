@@ -2,14 +2,17 @@ import { Line } from './Line'
 import { useTheme } from './ThemeContext';
 import image from '/blog/blogB1.webp'
 
-import viewLight from '/light/viewLight.png'
-import commentLight from '/light/commentLight.png'
-import heartLight from '/light/heartLight.png'
-import heart from '/light/heart.png'
+import viewLight from '/light/viewLight.avif'
+import commentLight from '/light/commentLight.avif'
+import heartLight from '/light/heartLight.avif'
 
-import viewDark from '/dark/viewDark.png'
-import commentDark from '/dark/commentDark.png'
-import heartDark from '/dark/heartDark.png'
+import likeLight from '/light/likeLight.avif'
+import likeDark from '/dark/likedDark.avif'
+
+
+import viewDark from '/dark/viewDark.avif'
+import commentDark from '/dark/commentDark.avif'
+import heartDark from '/dark/heartDark.avif'
 
 export function BlogItem(obj){
 
@@ -51,7 +54,7 @@ export function BlogItem(obj){
                                 </div>
                             </div>
                             <div className="flex flex-row-reverse gap-2">
-                                <img src={heart} alt="like" className="w-4 h-4 self-center" />
+                                <img src={theme === 'light' ? likeLight : likeDark} alt="like" className="w-4 h-4 self-center" />
                                 <div className="">11</div>
                             </div>
                         </div>

@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Body } from './components/Body'
 import { Footer } from './components/Footer'
+import {ScrollToTop} from './components/helper/ScrollToTop'
 
 
 
@@ -11,7 +12,6 @@ import { useTheme } from './components/ThemeContext';
 
 
 function App() {
-  const [count, setCount] = useState(0);
 
   const { theme, toggleTheme } = useTheme();
 
@@ -22,6 +22,7 @@ function App() {
         <Hero/>
         <Body/>
         <Footer/>
+        <ScrollToTop/>
       </div>
 
     </>

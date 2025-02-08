@@ -2,8 +2,8 @@ import { FormFooter } from "./FormFooter";
 import { useTheme } from './ThemeContext';
 
 
-import arrowLight from '/light/arrowLight.png'
-import arrowDark from '/dark/arrowDark.png'
+import arrowLight from '/light/arrowLight.avif'
+import arrowDark from '/dark/arrowDark.avif'
 
 export function Footer(){
 

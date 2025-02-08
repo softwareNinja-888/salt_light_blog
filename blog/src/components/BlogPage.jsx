@@ -11,8 +11,8 @@ import {SocialLinks} from "./SocialLinks"
 import {Quote} from "./Quote"
 import {Carousel} from './Carousel'
 
-import dotLight from '/light/dotLight.png'
-import dotDark from '/dark/dotDark.png'
+import dotLight from '/light/dotLight.avif'
+import dotDark from '/dark/dotDark.avif'
 
 
 import blogImg from '/blog/blogA1.webp'

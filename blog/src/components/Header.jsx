@@ -5,11 +5,10 @@ import { ThemeToggle } from './ToggleTheme';
 
 import { useNavigate } from 'react-router'
 
-import fishLight from '/light/fishLight.png'
-import fishDark from '/dark/fishDark.png'
-import logoDark from '/dark/logoDarkT.jpeg'
-import menuLight from '/light/menuLight.webp';
-import menuDark from '/dark/menuDark.png';
+import fishLight from '/light/fishLight.avif'
+import fishDark from '/dark/fishDark.avif'
+import menuLight from '/light/menuLight.avif';
+import menuDark from '/dark/menuDark.avif';
 
 
 export function Header(){
@@ -25,7 +24,7 @@ export function Header(){
 		<>
 			<div className="flex justify-between items-center px-3 h-16">
 				<div className="flex justify-center items-center gap-2 dark:text-white" onClick={()=>{handleNav("/")}}>
-					<div className="font-inter text-xl">
+					<div className="font-mont text-xl">
 						Salt&Light
 					</div>
 					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/>

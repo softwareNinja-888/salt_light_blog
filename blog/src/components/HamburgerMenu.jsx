@@ -1,15 +1,15 @@
-import closeLight from '/light/closeLight.png'
-import closeDark from '/dark/closeDark.webp'
+import closeLight from '/light/closeLight.avif'
+import closeDark from '/dark/closeDark.avif'
 
-import instaLight from '/light/instaLight.png'
-import xLight from '/light/xLight.png'
-import facebookLight from '/light/facebookLight.png'
-import tiktokLight from '/light/tiktokLight.png'
+import instaLight from '/light/instaLight.avif'
+// import xLight from '/light/xLight.avif'
+import facebookLight from '/light/facebookLight.avif'
+import tiktokLight from '/light/tiktokLight.avif'
 
-import instaDark from '/dark/instaDark.png'
-import xDark from '/dark/xDark.png'
-import facebookDark from '/dark/facebookDark.png'
-import tiktokDark from '/dark/tiktokDark.png'
+import instaDark from '/dark/instaDark.avif'
+import xDark from '/dark/xDark.avif'
+import facebookDark from '/dark/facebookDark.avif'
+import tiktokDark from '/dark/tiktokDark.avif'
 
 import React from "react";
 import { motion } from "framer-motion";
