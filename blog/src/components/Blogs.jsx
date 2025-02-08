@@ -1,7 +1,17 @@
+import { useNavigate } from "react-router";
 import { BlogItem } from "./BlogItem";
 import { Line } from "./Line";
 
 export function Blogs(){
+
+    const navigate = useNavigate()
+
+    function handleNav(path){
+		navigate(path)
+        console.log(path)
+	}
+
+
     return(
         <>
             <div id="blogs" className="font-mont text-3xl dark:text-white px-9 underline">Blogs</div>
@@ -12,7 +22,7 @@ export function Blogs(){
                 <BlogItem/>
                 <BlogItem/>
             </div>
-            <div className="flex justify-center items-center m-auto border font-poppins text-white bg-purple-600 border-purple-600 px-2 py-3 w-6/12 mt-8">
+            <div onClick={()=>{handleNav('/blogs')}} className="cursor-pointer flex justify-center items-center m-auto border font-poppins text-white bg-purple-600 border-purple-600 px-2 py-3 w-6/12 md:w-4/12 lg:w-2/12 mt-8">
                 More Posts
             </div>
             <div className="my-20">
