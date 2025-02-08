@@ -1,7 +1,7 @@
 import { Search } from "./Search";
 import { Line } from "./Line";
 import { motion } from "framer-motion";
-import heroImage from "/waitRoom/hero.jpeg"; // Make sure to place a relevant image in your assets folder
+import heroImage from "/hero.avif"; // Make sure to place a relevant image in your assets folder
 
 export function Hero() {
   const containerVariants = {

@@ -4,7 +4,7 @@ export function Featured(obj){
     return (
         <>
             <div className="">
-                <div className="flex flex-col gap-4 ml-6 mt-16 dark:text-white">
+                <div className="flex flex-col gap-4 ml-6 mt-16 dark:text-white md:w-4/12">
                     <div className="font-mono text-lg border border-black dark:border-white w-7/12 px-2 py-1 text-center">Featured Post</div>
                     <div className="flex flex-col border border-black dark:border-white w-11/12 ">
                         <div className="">
