@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-white h-full w-screen dark:bg-theme">
+      <div className="bg-white h-full max-w-screen dark:bg-theme overflow-x-hidden">
         <Header/>
         <Hero/>
         <Body/>
