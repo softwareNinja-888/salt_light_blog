@@ -86,7 +86,7 @@ export function About() {
                     <div className="lg:w-[80%]">
                         <HeadShot img={logo} link="https://github.com/softwareNinja-888" borderColor="border-blue-500" />
                     </div>
-                    <motion.div variants={itemVariants} className="flex lg:justify-center lg:items-center font-mont text-sm sm:text-md md:text-lg text-center leading-relaxed">
+                    <motion.div variants={itemVariants} className="flex lg:justify-center lg:items-center font-mont text-sm sm:text-md md:text-lg text-center lg:text-start leading-relaxed">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe asperiores vero deserunt numquam minus, ea quod error commodi nulla laboriosam ipsum sunt dicta enim quo quaerat officia fugiat debitis deleniti.
                     </motion.div>
                 </div>

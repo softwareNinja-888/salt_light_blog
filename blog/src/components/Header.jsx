@@ -22,15 +22,18 @@ export function Header(){
 
 		// HANDLE SCROLL
 	function toSection (section) {
-		const contactSection = document.getElementById(section);
-		contactSection ? contactSection?.scrollIntoView({ behavior: "smooth" }) : handleNav(section);
+		// UNCOMMENT WHEN ADDING DIFFERENT PAGES TO SITE:
+
+		// const contactSection = document.getElementById(section);
+		// contactSection ? contactSection?.scrollIntoView({ behavior: "smooth" }) : handleNav(section);
+		return null
 	};
 
 	return (
 		<>
 			<div className="flex justify-between md:justify-around items-center px-3 py-12 h-16">
-				<div className="flex justify-center items-center gap-2 dark:text-white" onClick={()=>{handleNav("/")}}>
-					<div className="font-mont text-xl">
+				<div className="flex justify-center items-center gap-2 dark:text-white cursor-pointer" onClick={()=>{handleNav("/")}}>
+					<div className="font-mont text-xl ">
 						Salt&Light
 					</div>
 					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/>

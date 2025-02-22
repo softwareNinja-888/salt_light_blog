@@ -51,7 +51,7 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
   // const navigate = useNavigate()
 
   function handleNavigation(path){
-    navigate(path)
+    // navigate(path)
     setMenuOpen()
   }
    

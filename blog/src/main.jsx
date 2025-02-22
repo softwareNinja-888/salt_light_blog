@@ -23,10 +23,10 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path='/' >
               <Route index element={<App/>}/>
-              <Route path='blogs' >
+              {/* <Route path='blogs' >
                 <Route index element={<BlogDisplay/>}/>
                 <Route path=':blog' element={<BlogPage/>}/>
-              </Route>
+              </Route> */}
             </Route>
           </Routes>
         </Router>
