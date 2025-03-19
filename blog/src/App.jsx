@@ -18,10 +18,10 @@ function App() {
   return (
     <>
       <div className="bg-white h-full max-w-screen dark:bg-theme overflow-x-hidden">
-        <Header/>
+        {/* <Header/> */}
         <Hero/>
         <Body/>
-        <Footer/>
+        {/* <Footer/> */}
         <ScrollToTop/>
       </div>
 
