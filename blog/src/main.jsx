@@ -12,6 +12,7 @@ import { ScrollToTop } from './components/helper/ScrollToTop'
 import { Layout } from './components/Layout.jsx';
 import { BlogDisplay } from './components/helper/BlogDisplay.jsx';
 import { BlogPage } from './components/BlogPage/BlogPage.jsx';
+import { Signin } from './components/Signin/Signin.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -24,10 +25,10 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path='/' element={<Layout/>}>
             <Route index element={<App/>}/>
-            {/* <Route path='blogs'>
-              <Route index element={<BlogDisplay/>}/>
-              <Route path=':blog' element={<BlogPage/>}/>
-            </Route> */}
+            <Route path='signin'>
+              <Route index element={<Signin/>}/>
+              {/* <Route path='signup' element={<Signup/>}/> */}
+            </Route>
           
             </Route>
           </Routes>
