@@ -43,7 +43,7 @@ export function Hero() {
           <div className="text-lg md:text-xl font-mono mt-2 text-black dark:text-white">
 						Trusting God is a lifelong journey. Don’t travel alone. Walk with faith, seek wisdom, and find strength in His word every day.
           </div>
-          <motion.div variants={itemVariants} className="mt-16 w-full max-w-md ">
+          <motion.div variants={itemVariants} className="mt-0 w-full max-w-md ">
             <Search />
           </motion.div>
         </motion.div>
