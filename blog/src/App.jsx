@@ -8,7 +8,7 @@ import {ScrollToTop} from './components/helper/ScrollToTop'
 
 
 
-import { useTheme } from './components/ThemeContext';
+import { useTheme } from './components/helper/ThemeContext';
 
 
 function App() {

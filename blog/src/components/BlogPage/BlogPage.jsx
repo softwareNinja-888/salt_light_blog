@@ -1,15 +1,16 @@
 import { useParams } from "react-router"
 import { useState } from "react";
-import { useTheme } from './ThemeContext';
+
+import { useTheme } from '../helper/ThemeContext';
 
 
-import {Header} from "./Header"
-import {Footer} from "./Footer"
+// import {Header} from "./Header"
+// import {Footer} from "./Footer"
 
-import {Line} from "./Line"
-import {SocialLinks} from "./SocialLinks"
-import {Quote} from "./Quote"
-import {Carousel} from './Carousel'
+import {Line} from "../helper/Line"
+import {SocialLinks} from "../helper/SocialLinks"
+import {Quote} from "../helper/Quote"
+import {Carousel} from '../helper/Carousel'
 
 import dotLight from '/light/dotLight.avif'
 import dotDark from '/dark/dotDark.avif'
@@ -28,7 +29,7 @@ export function BlogPage(){
     return (
         <>
             <div className="dark:text-white dark:bg-black">
-                <Header/>
+                {/* <Header/> */}
 
                 <div className="mt-16">
                     <div className="flex justify-between items-center px-3">
@@ -104,7 +105,7 @@ export function BlogPage(){
                 </div>
 
                 {/*FOOTER*/}
-                <Footer/>
+                {/* <Footer/> */}
             </div>
         </>
     )

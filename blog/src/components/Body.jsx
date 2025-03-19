@@ -1,8 +1,8 @@
 import { About } from "./About"
-import { Blogs } from "./Blogs"
-import { Featured } from "./Featured"
-import { FollowUs } from "./FollowUs"
-import { NewsLetter } from "./NewsLetter"
+import { Blogs } from "./helper/Blogs"
+import { Featured } from "./helper/Featured"
+import { FollowUs } from "./helper/FollowUs"
+import { NewsLetter } from "./helper/NewsLetter"
 export function Body(){
 
     return (

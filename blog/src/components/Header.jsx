@@ -1,12 +1,10 @@
-import { useTheme } from './ThemeContext';
-import { HamburgerMenu } from './HamburgerMenu'
-import { Line } from './Line';
-import { ThemeToggle } from './ToggleTheme';
+import { useTheme } from './helper/ThemeContext';
+import { HamburgerMenu } from './helper/HamburgerMenu'
+import { Line } from './helper/Line';
+import { ThemeToggle } from './helper/ToggleTheme';
 
 import { useNavigate } from 'react-router'
 
-import fishLight from '/light/fishLight.avif'
-import fishDark from '/dark/fishDark.avif'
 import menuLight from '/light/menuLight.avif';
 import menuDark from '/dark/menuDark.avif';
 import { LogoSvg } from './helper/LogoSvg';
@@ -34,10 +32,6 @@ export function Header(){
 		<>
 			<div className="flex justify-between md:justify-around items-center px-3 py-12 h-16">
 				<div className="flex justify-center items-center gap-2 dark:text-white cursor-pointer" onClick={()=>{handleNav("/")}}>
-					{/* <div className="font-mont text-xl ">
-						Salt&Light
-					</div>
-					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/> */}
 					<LogoSvg path='/svgLogo/logo6.svg' theme={theme}/>
 				</div>
 				<ThemeToggle/>

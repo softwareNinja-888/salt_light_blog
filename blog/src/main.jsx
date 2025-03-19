@@ -2,15 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { ThemeProvider } from './components/ThemeContext';
-import { AuthProvider } from './components/AuthContext';
+import { ThemeProvider } from './components/helper/ThemeContext.jsx';
+import { AuthProvider } from './components/helper/AuthContext';
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router';
 
-import { ScrollToTop } from './components/ScrollToTop'
-import { BlogDisplay } from './components/BlogDisplay.jsx';
-import { BlogPage } from './components/BlogPage.jsx';
+import { ScrollToTop } from './components/helper/ScrollToTop'
+import { BlogDisplay } from './components/helper/BlogDisplay.jsx';
+import { BlogPage } from './components/BlogPage/BlogPage.jsx';
 
 
 createRoot(document.getElementById('root')).render(

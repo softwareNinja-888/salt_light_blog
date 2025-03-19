@@ -1,8 +1,8 @@
 import { BlogItem } from "./BlogItem";
 import { BlogOfWeek } from "./BlogOfWeek";
-import { Header } from "./Header";
+import { Header } from "../Header";
 import { SearchFilter } from "./SearchFilter";
-import {Footer} from './Footer'
+import {Footer} from '../Footer'
 
 export function BlogDisplay(){
     return (

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { BlogItem } from "./BlogItem";
 import { Line } from "./Line";
-import { blogData } from "../data/blogData";
+import { blogData } from "@data/blogData";
 
 export function Blogs(){
 

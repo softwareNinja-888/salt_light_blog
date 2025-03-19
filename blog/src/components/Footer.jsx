@@ -1,5 +1,5 @@
-import { FormFooter } from "./FormFooter";
-import { useTheme } from './ThemeContext';
+import { FormFooter } from "./helper/FormFooter";
+import { useTheme } from './helper/ThemeContext';
 
 
 import arrowLight from '/light/arrowLight.avif'

@@ -43,7 +43,7 @@
 // }
 
 
-import { Line } from './Line'
+import { Line } from './helper/Line'
 import logo from '/light/logo.avif'
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';

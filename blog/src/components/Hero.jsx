@@ -1,5 +1,5 @@
-import { Search } from "./Search";
-import { Line } from "./Line";
+import { Search } from "./helper/Search";
+import { Line } from "./helper/Line";
 import { motion } from "framer-motion";
 import heroImage from "/hero.avif"; // Make sure to place a relevant image in your assets folder
 
