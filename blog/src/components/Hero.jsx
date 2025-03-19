@@ -2,6 +2,7 @@ import { Search } from "./helper/Search";
 import { Line } from "./helper/Line";
 import { motion } from "framer-motion";
 import heroImage from "/hero.avif"; // Make sure to place a relevant image in your assets folder
+import { HeroImg } from "./HeroImg";
 
 export function Hero() {
   const containerVariants = {
@@ -52,11 +53,7 @@ export function Hero() {
           variants={imageVariants}
           className="w-full md:w-1/2 justify-center hidden lg:block "
         >
-          <img
-            src={heroImage}
-            alt="Faith Illustration"
-            className="max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-lg"
-          />
+          <img className="max-w-sm md:max-w-md lg:max-w-md h-30" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png" alt="" />
         </motion.div>
       </motion.div>
       <Line />
