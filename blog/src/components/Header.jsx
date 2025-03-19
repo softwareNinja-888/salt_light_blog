@@ -9,6 +9,7 @@ import fishLight from '/light/fishLight.avif'
 import fishDark from '/dark/fishDark.avif'
 import menuLight from '/light/menuLight.avif';
 import menuDark from '/dark/menuDark.avif';
+import { LogoSvg } from './helper/LogoSvg';
 
 
 export function Header(){
@@ -33,10 +34,11 @@ export function Header(){
 		<>
 			<div className="flex justify-between md:justify-around items-center px-3 py-12 h-16">
 				<div className="flex justify-center items-center gap-2 dark:text-white cursor-pointer" onClick={()=>{handleNav("/")}}>
-					<div className="font-mont text-xl ">
+					{/* <div className="font-mont text-xl ">
 						Salt&Light
 					</div>
-					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/>
+					<img src={theme === 'light' ? fishLight : fishDark} alt="fish symbol" className="w-6 h-6 self-center rotate-180"/> */}
+					<LogoSvg path='/svgLogo/logo6.svg' theme={theme}/>
 				</div>
 				<ThemeToggle/>
 				<div className="mr-4 md:hidden">
