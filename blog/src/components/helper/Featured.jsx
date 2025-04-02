@@ -6,11 +6,11 @@ export function Featured(obj){
             <div className="">
                 <div className="flex flex-col gap-4 ml-6 mt-16 dark:text-white md:w-6/12 lg:w-4/12">
                     <div className="font-mono text-lg border border-black dark:border-white w-7/12 px-2 py-1 text-center">Featured Post</div>
-                    <div className="flex flex-col border border-black dark:border-white w-11/12 cursor-pointer">
+                    <div className="group flex flex-col border border-black dark:border-white w-11/12 cursor-pointer">
                         <div className="">
-                            <img src={image} alt="blog image" className="h-60 w-full" />
+                            <img src={image} alt="blog image" className="h-60 w-full transition-all duration-1000 transform group-hover:scale-105" />
                         </div>
-                        <div className="p-3">
+                        <div className="p-3 group-hover:scale-105">
                             <div className="font-geist text-sm">
                                 Admin 
                             </div>

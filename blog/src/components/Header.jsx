@@ -30,7 +30,7 @@ export function Header(){
 
 	return (
 		<>
-			<div className="flex justify-between md:justify-around items-center px-3 py-12 h-16">
+			<div className={`${theme === 'light' ? 'bg-white':'bg-black'}  flex justify-between md:justify-around items-center px-3 py-12 h-16 `}>
 				<div className="flex justify-center items-center gap-2 dark:text-white cursor-pointer" onClick={()=>{handleNav("/")}}>
 					<LogoSvg path='/svgLogo/logo6.svg' theme={theme}/>
 				</div>
@@ -41,7 +41,7 @@ export function Header(){
             	</div>			
             	 <nav className="hidden md:flex md:space-x-10 lg:space-x-20 text-sm text-black dark:text-white font-mont ">
 
-	                <div className=" flex gap-1.5 no-underline relative cursor-pointer text-inherit after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 dark:hover:after:bg-white hover:after:bg-black text-base max-[500px]:text-xs" onClick={()=>{toSection('/blogs')}}>
+	                <div className={`${theme === 'light' ? 'text-black':'text-white'} flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 dark:hover:after:bg-white hover:after:bg-black text-base max-[500px]:text-xs` }onClick={()=>{toSection('/blogs')}}>
 	                    Blogs
 	                </div>
 

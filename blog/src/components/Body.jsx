@@ -10,8 +10,7 @@ export function Body(){
            <Featured/>
            <NewsLetter/>
            <Blogs/>
-           <About/>
-           <FollowUs/>
+
            
         </>
     )

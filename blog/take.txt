@@ -1,0 +1,7 @@
+make sure its dark mode:
+
+header
+fix hero
+search
+product cards for blog
+newsletter
