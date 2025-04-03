@@ -7,7 +7,7 @@ import { Line } from './helper/Line';
 
 export function Header({
     logoImg='/logo.svg',
-    links=['Home','Blogs','About Us','Log In/Sign Up',],
+    links=['Home','Blogs','Log In/Sign Up',],
     btnName="Let's Talk",
     sticky=true,}
 ){
@@ -34,7 +34,7 @@ export function Header({
                         {links.map((link,index)=>{
                             return (
                                 
-                                <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 dark:hover:after:bg-white hover:after:bg-black text-base max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link}`)}}>
+                                <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 dark:hover:after:bg-white hover:after:bg-black text-base max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link === 'Home' ? '' : link}`)}}>
                                     {link}
                                 </div>
                             )

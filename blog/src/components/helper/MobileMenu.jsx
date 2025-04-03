@@ -1,4 +1,6 @@
 import closeLight from '/closeLight.avif'
+import close from '/closeDark.avif'
+
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router'
@@ -53,13 +55,13 @@ export function MobileMenu({ menuOpen, setMenuOpen }){
         variants={menuVariants}
       >
         {/* CLOSE BTN */}
-        <img src={closeLight} onClick={() => setMenuOpen(false)} className="absolute top-10 right-10 text-2xl w-5" />
+        <img src={close} onClick={() => setMenuOpen(false)} className="absolute top-10 right-10 text-2xl w-5" />
 
         {/* Links */}
         <nav className="flex flex-col space-y-4 text-lg font-poppins items-center">
           <div onClick={()=>{handleNavigation("/")}} className="text-white hover:underline">Home</div>
           <div onClick={()=>{handleNavigation("/blogs")}}className="text-white hover:underline">Blogs</div>
-          <div onClick={()=>{handleNavigation("/aboutus")}} className="text-white hover:underline">About Us</div>
+          {/* <div onClick={()=>{handleNavigation("/aboutus")}} className="text-white hover:underline">About Us</div> */}
           <div onClick={()=>{handleNavigation("/signup")}} className='text-white'>Login/SignUp</div>
 {/*            {IsLoggedIn ? <div onClick={()=>{handleNavigation(`profile/${ActiveUser}`)}}>Profile</div>:
                           <>

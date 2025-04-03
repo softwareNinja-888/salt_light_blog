@@ -21,8 +21,8 @@ function App() {
       <div className={`h-full max-w-screen  overflow-x-hidden`}>
         <Hero />
         <Post img={image} feature={true} newStatus={true} postInfo={featuredBlog[0]}/>
-        <Blogs/>
         <NewsLetterTest/>
+        <Blogs/>
 
         <ScrollToTop />
       </div>
