@@ -37,7 +37,7 @@ export function Hero() {
         {/* Text Content */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col items-center md:items-start justify-center text-center md:text-left w-full lg:w-1/2"
+          className="flex flex-col items-center md:items-start justify-center text-center md:text-left w-full lg:w-1/2 md:gap-3 gap-8"
         >
           <div className="text-3xl md:text-5xl font-poppins dark:text-white">Leap of Faith</div>
           <div className="text-lg md:text-xl font-mono mt-2 text-black dark:text-white">
@@ -51,9 +51,9 @@ export function Hero() {
         {/* Image Content */}
         <motion.div
           variants={imageVariants}
-          className="w-full md:w-1/2 justify-center hidden lg:block "
+          className="w-full md:w-1/2 justify-center hidden lg:flex"
         >
-          <img className="max-w-sm md:max-w-md lg:max-w-md h-30" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png" alt="" />
+          <img className="max-w-sm md:max-w-md lg:w-full h-full" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png" alt="" />
         </motion.div>
       </motion.div>
       <Line />

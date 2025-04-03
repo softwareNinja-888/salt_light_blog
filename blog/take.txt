@@ -1,7 +1,17 @@
-make sure its dark mode:
-
-header
-fix hero
-search
+hero copy
+cursor search
+newsletter/copy
 product cards for blog
-newsletter
+
+
+sections
+
+camelCase sections
+
+
+### **Summary of Your Blog: "The Power of Faith in Difficult Times"**  
+
+ 
+
+Let me know if you’d like any tweaks or further refinements!
+

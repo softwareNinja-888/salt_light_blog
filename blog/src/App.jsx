@@ -1,18 +1,29 @@
 import { useState } from 'react'
 
-import { Header } from './components/Header'
 import { Hero } from './components/Hero'
-import { Body } from './components/Body'
-import { Footer } from './components/Footer'
 import {ScrollToTop} from './components/helper/ScrollToTop'
+import { NewsLetterTest } from './components/NewsLetterTest'
+import { Blogs } from './components/helper/Blogs'
+import { Post } from './components/Post'
+
+import { blogData } from './data/blogData'
+
+
+// FEATURE IMG
+import image from '/blog/blogA1.webp'
+
 
 function App() {
+  const featuredBlog = blogData.filter(el=>el.featured === true)
 
   return (
     <>
       <div className={`h-full max-w-screen  overflow-x-hidden`}>
         <Hero />
-        <Body />
+        <Post img={image} feature={true} newStatus={true} postInfo={featuredBlog[0]}/>
+        <Blogs/>
+        <NewsLetterTest/>
+
         <ScrollToTop />
       </div>
 

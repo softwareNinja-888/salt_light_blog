@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router';
 
 import { ScrollToTop } from './components/helper/ScrollToTop'
 import { Layout } from './components/Layout.jsx';
-import { BlogDisplay } from './components/helper/BlogDisplay.jsx';
-import { BlogPage } from './components/BlogPage/BlogPage.jsx';
+import { BlogDisplay } from './components/Blogs/BlogDisplay.jsx';
+import { BlogPage } from './components/Blogs/BlogPage/BlogPage.jsx';
 import { Signin } from './components/Signin/Signin.jsx';
 
 
@@ -29,7 +29,10 @@ createRoot(document.getElementById('root')).render(
               <Route index element={<Signin/>}/>
               {/* <Route path='signup' element={<Signup/>}/> */}
             </Route>
-          
+            <Route path='blogs'>
+              <Route index element={<BlogDisplay/>}/>
+              <Route path=':id' element={<BlogPage/>}/>
+            </Route>
             </Route>
           </Routes>
         </Router>
