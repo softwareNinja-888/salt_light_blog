@@ -11,6 +11,7 @@ import { blogData } from './data/blogData'
 
 // FEATURE IMG
 import image from '/blog/blogA1.webp'
+import { Projects } from './components/BlogsTest'
 
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
     <>
       <div className={`h-full max-w-screen  overflow-x-hidden`}>
         <Hero />
-        <Post img={image} feature={true} newStatus={true} postInfo={featuredBlog[0]}/>
+        <div  className='px-10'>
+          <Post img={image} feature={true} newStatus={true} postInfo={featuredBlog[0]} width='w-full'/>
+        </div>
         <NewsLetterTest/>
+        {/*<Projects/>*/}
         <Blogs/>
 
         <ScrollToTop />

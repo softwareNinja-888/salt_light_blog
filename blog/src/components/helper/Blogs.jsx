@@ -10,7 +10,6 @@ export function Blogs(){
 
     function handleNav(path){
 		navigate(path)
-        console.log(path)
 	}
     // const {} = useParams
     const homeBlogs = blogData.slice(0,6)
@@ -27,7 +26,7 @@ export function Blogs(){
                 More Posts
             </div>
             <div className="my-20">
-                <Line/>
+                {/*<Line/>*/}
             </div>
         </>
     )

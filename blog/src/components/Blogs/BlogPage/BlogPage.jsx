@@ -32,7 +32,7 @@ export function BlogPage(){
 
     return (
         <>
-            <div className="flex flex-col mx-auto lg:w-9/12 border border-red-800">
+            <div className="flex flex-col mx-auto lg:w-10/12 ">
 
                 <div className="mt-16">
                     <div className="flex justify-between items-center px-3">
@@ -49,12 +49,12 @@ export function BlogPage(){
                           {blogInfo.summary}
                         </div>
                         <div className="">
-                            <img src={blogImg} alt="blog Image" className="h-52 lg:h-96 w-full"/>    
+                            <img src={blogInfo.img} alt="blog Image" className="h-52 lg:h-96 w-full"/>    
                         </div>
                         {/* <div className="text-sm font-roboto py-6 ">
                             {blogInfo.content.introduction}
                         </div> */}
-                        <Quote/>
+                        {/* <Quote/> */}
                         {sections.map(section=>{
                             return (
                                 <>

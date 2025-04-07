@@ -39,8 +39,8 @@ export function Hero() {
           variants={itemVariants}
           className="flex flex-col items-center md:items-start justify-center text-center md:text-left w-full lg:w-1/2 md:gap-3 gap-8"
         >
-          <div className="text-3xl md:text-5xl font-poppins dark:text-white">Leap of Faith</div>
-          <div className="text-lg md:text-xl font-mono mt-2 text-black dark:text-white">
+          <div className="text-3xl md:text-5xl font-poppins text-black">Leap of Faith</div>
+          <div className="text-lg md:text-xl font-mono mt-2 text-black text-black">
 						Trusting God is a lifelong journey. Don’t travel alone. Walk with faith, seek wisdom, and find strength in His word every day.
           </div>
           <motion.div variants={itemVariants} className="mt-0 w-full max-w-md ">

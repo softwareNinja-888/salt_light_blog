@@ -9,6 +9,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router';
 
 import { ScrollToTop } from './components/helper/ScrollToTop'
+import { PageScrollToTop } from './components/helper/PageScrollToTop.jsx'
 import { Layout } from './components/Layout.jsx';
 import { BlogDisplay } from './components/Blogs/BlogDisplay.jsx';
 import { BlogPage } from './components/Blogs/BlogPage/BlogPage.jsx';
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
     <ThemeProvider>
       <AuthProvider>
         <Router>
+          <PageScrollToTop/>
           <ScrollToTop/>
           <Routes>
             <Route path='/' element={<Layout/>}>

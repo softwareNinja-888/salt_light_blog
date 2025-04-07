@@ -26,7 +26,7 @@ export function Header({
         <>
 			<div className={`${sticky ? 'sticky top-0 z-50' : null}`}>
                 <div className={`bg-white flex justify-between mx-auto md:justify-between items-center px-10 md:px-23 py-12 h-16 `}>
-                    <div className="flex justify-center items-center gap-2 dark:text-white cursor-pointer" onClick={()=>{handleNav("/")}}>
+                    <div className="flex justify-center items-center gap-2 text-black cursor-pointer" onClick={()=>{handleNav("/")}}>
                         <LogoSvg path='/svgLogo/logo6.svg'/>
                     </div>
                     
@@ -34,7 +34,7 @@ export function Header({
                         {links.map((link,index)=>{
                             return (
                                 
-                                <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 dark:hover:after:bg-white hover:after:bg-black text-base max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link === 'Home' ? '' : link}`)}}>
+                                <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-white hover:after:bg-black text-black max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link === 'Home' ? '' : link}`)}}>
                                     {link}
                                 </div>
                             )

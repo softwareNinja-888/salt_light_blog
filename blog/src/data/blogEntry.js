@@ -14,7 +14,8 @@ export const BlogUtility = (function(){
     summary,
     blogCategoryId = [],
     socialLinks = {},
-    featured = false
+    featured = false,
+    img=`/blog/blogB1.webp`
   ) {
     return {
       post_id,
@@ -39,9 +40,33 @@ export const BlogUtility = (function(){
       num_of_comments:10,
       featured: featured,
       reading_time: Math.ceil(Object.values(content).join(" ").split(" ").length / 200),
-      img: `/blog/blogB1.webp`,
+      img,
     };
   }
 
   return {createBlogPost}
 })()
+
+export const CategoryUtility = (function(){
+  function createCategory(category_id, name, rating) {
+    return {
+      category_id,
+      name,
+      rating,
+    };
+  }
+  return { createCategory };
+})();
+
+// Author Utility function for generating author objects
+export const AuthorUtility = (function(){
+  function createAuthor(author_id, name, email, bio) {
+    return {
+      author_id,
+      name,
+      email,
+      bio,
+    };
+  }
+  return { createAuthor };
+})();
