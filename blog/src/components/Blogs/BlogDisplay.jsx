@@ -9,7 +9,7 @@ export function BlogDisplay(){
                     <BlogOfWeek/>
                 </div>
                 <div className="mt-30">
-                   <Blogs/>
+                   <Blogs all={true}/>
                 </div>
             </div>
         </>

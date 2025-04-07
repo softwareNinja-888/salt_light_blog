@@ -15,7 +15,8 @@ export const BlogUtility = (function(){
     blogCategoryId = [],
     socialLinks = {},
     featured = false,
-    img=`/blog/blogB1.webp`
+    img=`/blog/blogB1.webp`,
+    comments=[],
   ) {
     return {
       post_id,
@@ -35,9 +36,10 @@ export const BlogUtility = (function(){
       status,
       blog_category_id: blogCategoryId,
       social_links: socialLinks,
+      comments,
       number_of_views: 0,
       num_of_likes: 0,
-      num_of_comments:10,
+      num_of_comments:comments.length,
       featured: featured,
       reading_time: Math.ceil(Object.values(content).join(" ").split(" ").length / 200),
       img,

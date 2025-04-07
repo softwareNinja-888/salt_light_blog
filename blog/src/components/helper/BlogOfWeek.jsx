@@ -7,7 +7,7 @@ export function BlogOfWeek(){
     
     return (
         <>
-            <div className="flex bg-center bg-cover bg-no-repeat h-72 px-5 py-5 relative w-10/12 border border-black dark:border-white " style={{backgroundImage: "url('/blog/churchC1.webp')"}}>
+            <div className="flex bg-center bg-cover bg-no-repeat h-72 px-5 py-5 relative w-10/12 border border-black bg-center bg-cover" style={{backgroundImage: "url('/blog/blogB1.webp')"}}>
                 <div className="absolute inset-0 bg-black opacity-40 pointer-events-none"></div>
                 <div className="flex flex-col gap-4 relative z-10 justify-center">
                     <div className="text-white font-poppins text-lg">Blog of the Week</div>

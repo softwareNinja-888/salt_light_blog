@@ -8,7 +8,6 @@ import likeLight from '/light/likeLight.avif'
 import { NavLink } from "react-router";
 
 function truncateText(text,maxLength=244){
-    console.log(text)
     if (text === undefined){
         return
     }

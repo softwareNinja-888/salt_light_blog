@@ -5,6 +5,8 @@ import ReactMarkdown from 'react-markdown'
 
 import {Line} from "../../helper/Line"
 import {SocialLinks} from "../../helper/SocialLinks"
+import {Comment} from "../../helper/Comment"
+
 import {Quote} from "../../helper/Quote"
 import {Carousel} from '../../helper/Carousel'
 
@@ -28,13 +30,13 @@ export function BlogPage(){
     const sections = Object.keys(blogInfo.content)
     const content = JSON.stringify(blogInfo.content)
 
-    console.log(blogInfo.content)
+    console.log(blogInfo.comments)
 
     return (
         <>
-            <div className="flex flex-col mx-auto lg:w-10/12 ">
+            <div className="flex flex-col mx-auto lg:w-10/12 text-black">
 
-                <div className="mt-16">
+                <div className="mt-16 ">
                     <div className="flex justify-between items-center px-3">
                         <div className="flex font-geist text-xs gap-2">
                             <div className="">Mar 23, 2023</div>
@@ -51,14 +53,10 @@ export function BlogPage(){
                         <div className="">
                             <img src={blogInfo.img} alt="blog Image" className="h-52 lg:h-96 w-full"/>    
                         </div>
-                        {/* <div className="text-sm font-roboto py-6 ">
-                            {blogInfo.content.introduction}
-                        </div> */}
-                        {/* <Quote/> */}
                         {sections.map(section=>{
                             return (
                                 <>
-                                    <div className="">
+                                    <div  className="">
                                         <div className="font-poppins text-lg">{formatCamelCase(section)}</div>
                                         <div className="prose prose-lg prose-blue text-sm font-roboto py-6">
                                             <ReactMarkdown>{blogInfo.content[section]}</ReactMarkdown>
@@ -84,15 +82,22 @@ export function BlogPage(){
                 <Carousel/>
 
                 {/*COMMENTS*/}
-                <div className="">
+                <div className="py-40">
                      <div className="flex flex-col gap-6">
                         <Line />
-                        <div className="px-3 font-lora">Comments</div>
+                        <div className="px-3 font-lora">{blogInfo.num_of_comments} Comments</div>
                         <Line/>
                     </div>
                     <div className="px-3 py-6"> 
                         <textarea id="comment" value={comment} onChange={(e) => setComment(e.target.value)} placeholder="Your comment..." className="w-full px-3 py-2 border border-black focus:border-none focus:outline-none focus:ring-2 focus:ring-purple-500 h-24 resize-none" >  
                         </textarea>
+                    </div>
+                    <div className='flex flex-col gap-16 px-10'>
+                        {blogInfo.comments.map(comment=>{
+                            return (
+                                <Comment obj={comment}/>
+                            )
+                        })}
                     </div>
                 </div>
             </div>
