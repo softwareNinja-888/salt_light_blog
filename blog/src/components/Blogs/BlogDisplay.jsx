@@ -4,13 +4,12 @@ import { Blogs } from "../helper/Blogs";
 export function BlogDisplay(){
     return (
         <>
-            <div className="bg-white h-full w-screen dark:bg-theme overflow-hidden ">
-                <div className="flex flex-col justify-center gap-5 items-center mt-20">
+            <div className="bg-white h-full max-w-12/12">
+                <div className="flex flex-col justify-center gap-5 items-center mt-20 overflow-hidden">
                     <BlogOfWeek/>
                 </div>
-                <div className="mt-30">
-                   <Blogs all={true}/>
-                </div>
+                <Blogs all={true}/>
+               
             </div>
         </>
     )

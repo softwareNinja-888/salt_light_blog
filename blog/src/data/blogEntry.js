@@ -72,7 +72,7 @@ export const CategoryUtility = (function(){
 
 // Author Utility function for generating author objects
 export const AuthorUtility = (function(){
-  function createAuthor(author_id, name, email, bio,profile_picture='https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/3/avatar-6.png') {
+  function createAuthor(author_id, name, email, bio,profile_picture='placeholder.png') {
     return {
       author_id,
       name,

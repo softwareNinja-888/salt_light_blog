@@ -39,17 +39,17 @@ export function Post({postName='Back to Fiction: What I am reading this year.',
                     </div>
 
                     {/* NEW STATUS*/}
-                    {/* {newStatus ? (
+                    {newStatus ? (
                         <div className="absolute left-3 top-3">
                             <p className="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-gray-700 uppercase bg-white">New</p>
                         </div>
-                    ): null} */}
+                    ): null}
 
                     {/*  */}
                     <div className="flex flex-col">
                         <div className="p-3  ">
                                 <div className="flex gap-2 font-poppins text-sm mb-3">
-                                    <img src={blogAuthor.profile_picture} alt="profile image" className="w-10 h-10" />
+                                    <img src={blogAuthor.profile_picture} alt="profile image" className="w-8 h-8" />
                                     <div className="self-center">{blogAuthor.name}</div>
                                 </div>
                                 <div className="flex font-geist text-sm gap-2">

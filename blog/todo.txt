@@ -14,7 +14,6 @@ Salt Blog
     -Newsletter functionality #10
     -Footer #11
         -Copy & functionality
-    -Mobile menu links #2
     -Carosuel Blog page #12
     -Tablet blog page #3
     -Overflow blogpage #4

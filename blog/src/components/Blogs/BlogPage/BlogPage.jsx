@@ -62,8 +62,9 @@ export function BlogPage(){
                           {blogInfo.summary}
                         </div>
                         <div className="">
-                            <img src={blogInfo.img} alt="blog Image" className="h-52 lg:h-[650px] w-full"/>    
-                        </div>
+                            <img src={blogInfo.img} alt="blog Image" className="h-52 md:h-[400px] lg:h-[500px] w-full"/>    
+                        </div>  
+
                         {sections.map(section=>{
                             return (
                                 <>
