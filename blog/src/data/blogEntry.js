@@ -1,6 +1,7 @@
 
 
 export const BlogUtility = (function(){
+
   function createBlogPost(
     post_id,
     title,
@@ -39,10 +40,19 @@ export const BlogUtility = (function(){
       comments,
       number_of_views: 0,
       num_of_likes: 0,
-      num_of_comments:comments.length,
       featured: featured,
       reading_time: Math.ceil(Object.values(content).join(" ").split(" ").length / 200),
       img,
+      numOfComments(){
+        return this.comments.comments.length
+      },
+      formatedDate() {
+        const date = new Date(this.published_at);
+        const options = { year: 'numeric', month: 'short', day: '2-digit' };
+        const formatted = new Intl.DateTimeFormat('en-US', options).format(date);
+        
+        return formatted;
+      }
     };
   }
 
@@ -62,13 +72,44 @@ export const CategoryUtility = (function(){
 
 // Author Utility function for generating author objects
 export const AuthorUtility = (function(){
-  function createAuthor(author_id, name, email, bio) {
+  function createAuthor(author_id, name, email, bio,profile_picture='https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/3/avatar-6.png') {
     return {
       author_id,
       name,
       email,
       bio,
+      profile_picture
     };
   }
   return { createAuthor };
 })();
+
+
+export const CommentUtility = (function (){
+  function createComment(comment_id,username,profile_picture,date,text,replies=[]){
+    return {
+      comment_id,
+      username,
+      profile_picture,
+      date,
+      text,
+      replies,
+    }
+
+  }
+
+  return {createComment}
+})()
+
+export const CommentSectionUtility = (function (){
+  function createCommentSection(section_id,comments=[],){
+    return {
+      section_id,
+      comments,
+    }
+
+  }
+
+  return {createCommentSection}
+})()
+

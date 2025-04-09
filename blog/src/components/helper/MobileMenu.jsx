@@ -5,13 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router'
 
-export function MobileMenu({ menuOpen, setMenuOpen }){
-
-  const navigate = useNavigate()
-
-  // function handleImg(){
-  //   return theme === 'light' ? xLight : xDark;
-  // }
+export function MobileMenu({ menuOpen, setMenuOpen,links=[''] }){
 
   // Animation variants for menu
   const menuVariants = {
@@ -27,13 +21,14 @@ export function MobileMenu({ menuOpen, setMenuOpen }){
     },
   };
 
-  // const navigate = useNavigate()
+  // HANDLE NAVIGATION:
 
-  function handleNavigation(path){
-    // navigate(path)
-    setMenuOpen()
-  }
-   
+  const navigate = useNavigate()
+
+  function handleNav(path){
+		navigate(path.toLowerCase())
+    setMenuOpen(!menuOpen)
+	}
 
   return (
     <>
@@ -59,10 +54,14 @@ export function MobileMenu({ menuOpen, setMenuOpen }){
 
         {/* Links */}
         <nav className="flex flex-col space-y-4 text-lg font-poppins items-center">
-          <div onClick={()=>{handleNavigation("/")}} className="text-white hover:underline">Home</div>
-          <div onClick={()=>{handleNavigation("/blogs")}}className="text-white hover:underline">Blogs</div>
-          {/* <div onClick={()=>{handleNavigation("/aboutus")}} className="text-white hover:underline">About Us</div> */}
-          <div onClick={()=>{handleNavigation("/signup")}} className='text-white'>Login/SignUp</div>
+          {links.map((link,index)=>{
+              return (
+                  
+                  <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-white  text-white max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link === 'Home' ? '' : link}`)}}>
+                      {link}
+                  </div>
+              )
+          })}
 {/*            {IsLoggedIn ? <div onClick={()=>{handleNavigation(`profile/${ActiveUser}`)}}>Profile</div>:
                           <>
                             <div onClick={()=>{handleNavigation("/signup")}}>Login/SignUp</div>

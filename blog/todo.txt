@@ -1,0 +1,66 @@
+TODO
+
+Salt Blog
+    -Login/SignUp page (Demo profile login info) #13
+    -Hero Copy #6
+    -Featured post align to newsletter && Responsive design #1
+    -Blog card images #5
+        -Blog card new if under 2days(use published or formatted date)
+        -Usernames on blog card
+        -Center blog cards in mobile
+    -Comment functionality #7
+    -Like functionality #8
+    -Search functionality #9
+    -Newsletter functionality #10
+    -Footer #11
+        -Copy & functionality
+    -Mobile menu links #2
+    -Carosuel Blog page #12
+    -Tablet blog page #3
+    -Overflow blogpage #4
+
+    -At the end add better blogs. 
+        
+Web solutions
+    -General
+        -Optimise images and fonts
+    -Home
+        -Change name
+        -Hero Copy
+        -Update project images
+        -Our services copy
+            -Service card Responsive
+        -About us copy
+        -Pricing plan
+            -Copy
+            -Price structure and offers(Also come up with names)
+        -Testimonials
+            -Make relistic
+        -Remove team Section until further notice
+        -Footer copy && functionality
+
+    -Our services
+        -Figure out structure
+        -Get copy
+
+    -About us
+        -Copy 
+        -Final structure
+
+    -Our Work
+        -Copy
+        -Overflow
+        -Best projects only
+
+    -Pricing 
+        -Finish copstructure for pricing (offers)  
+    
+    -COntact Us
+        -Copy && functionality
+        -Background fix
+
+Projects
+    -I Need the blog and 3 landing pages that reflect the price structure (StaticE500-E800,minimum animation E1000 -E1300,premuim E1800)
+
+Marketing Campaign
+    -Get list of potential cilents that fulfill criteria

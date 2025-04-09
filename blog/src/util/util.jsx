@@ -1,3 +1,11 @@
+export default function formatDate(dateString) {
+  const date = new Date(dateString);
+  const options = { year: 'numeric', month: 'short', day: '2-digit' };
+  const formatted = new Intl.DateTimeFormat('en-US', options).format(date);
+  
+  return formatted;
+}
+
 export const DefaultColumn = ({ children }) => {
     return (
       <div className='w-full px-4 md:w-1/2 lg:w-full'>

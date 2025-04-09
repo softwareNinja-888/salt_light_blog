@@ -21,8 +21,8 @@ function App() {
     <>
       <div className={`h-full max-w-screen  overflow-x-hidden`}>
         <Hero />
-        <div  className='px-10'>
-          <Post img={image} feature={true} newStatus={true} postInfo={featuredBlog[0]} width='w-full'/>
+        <div  className='px-0 mx-auto w-screen'>
+          <Post img={image} feature={true} newStatus={true} postInfo={featuredBlog[0]} width='w-[1000px]'/>
         </div>
         <NewsLetterTest/>
         {/*<Projects/>*/}

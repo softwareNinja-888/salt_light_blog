@@ -12,9 +12,6 @@ export function Header({
     sticky=true,}
 ){
 
-    // FOR HEADER COMPONET ALSO NEEDS MENU COMPONENT WHICH IS IN HELPER FOLDER. src/components/helper/MobileMenu.jsx
-    // ALSO REQUIRES INSTALLATION OF REACT ROUTER
-
     const [menuOpen, setMenuOpen ] = useState(false)
 	const navigate = useNavigate()
 
@@ -34,7 +31,7 @@ export function Header({
                         {links.map((link,index)=>{
                             return (
                                 
-                                <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-white hover:after:bg-black text-black max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link === 'Home' ? '' : link}`)}}>
+                                <div key={index} className={`flex gap-1.5 no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-black text-black max-[500px]:text-xs` } onClick={()=>{handleNav(`/${link === 'Home' ? '' : link}`)}}>
                                     {link}
                                 </div>
                             )
@@ -54,7 +51,7 @@ export function Header({
                                 strokeWidth="2"
                                 d="M4 6h16M4 12h16M4 18h7" />
                         </svg>
-                        {menuOpen && <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
+                        {menuOpen && <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} links={links} />}
                     </div>		
 
                     
