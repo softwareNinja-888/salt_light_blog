@@ -13,17 +13,28 @@ function truncateText(text,maxLength=244){
     }
     return text.length > maxLength ? text.slice(0,maxLength) + '....': text;
 } 
+function isWithinXDays(dateStr){
+    const now = new Date()
+    const targetDate = new Date(dateStr)
+
+    const diffInMs = now - targetDate
+    const diffInDays = diffInMs / (1000 * 60 * 60 *24)
+
+    return diffInDays >= 0 && diffInDays <= 5;
+}
 export function Post({postName='Back to Fiction: What I am reading this year.',
     feature=false,
     postInfo={},
     newStatus=false,
-    img,
+    img ='https://fakeimg.pl/600x400?text=profile',
     width='w-100'
 
 }){
 
     const blogAuthor = authorData.filter(author=>author.author_id === postInfo.author_id)[0]
-    console.log('blogAuthor:',)
+    newStatus = isWithinXDays(postInfo.created_at)
+    console.log(`${postInfo.title}`,newStatus)
+
 
     return(
         <>
@@ -35,7 +46,7 @@ export function Post({postName='Back to Fiction: What I am reading this year.',
                 <NavLink to={`/blogs/${postInfo.post_id}`} className={`relative group border-1 border-black cursor-pointer ${feature ? 'w-1/3': 'w-full'} `}>
                     {/* BLOG IMAGE */}
                     <div className="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img className="object-cover w-full h-74 transition-all duration-300 group-hover:scale-125" src={ img || postInfo.img} alt={`${postName} image`} />
+                        <img className="object-cover w-full h-74 transition-all duration-300 group-hover:scale-125" src={  postInfo.img || img  } alt={`${postName} image`} />
                     </div>
 
                     {/* NEW STATUS*/}

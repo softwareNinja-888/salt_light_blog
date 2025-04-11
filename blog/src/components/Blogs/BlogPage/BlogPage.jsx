@@ -43,6 +43,8 @@ export function BlogPage(){
         }))
     })
 
+
+
     return (
         <>
             <div className="flex flex-col mx-auto lg:w-10/12 text-black">
@@ -86,7 +88,6 @@ export function BlogPage(){
                 {/*GENRE*/}
                 <div className='flex gap-1 text-xs px-3 font-poppins mt-10'>
                     {categories.map((category,index)=>{
-                            console.log('category:',category)
                         return (
                             <div key={category.category_id}>{category[0].name} &#183; </div>
                         )
@@ -101,7 +102,7 @@ export function BlogPage(){
                 </div>
 
                 {/*CAROUSEL POST */}
-                <Carousel/>
+                <Carousel categoryIds={blogInfo.blog_category_id}/>
 
                 {/*COMMENTS*/}
                 <div className="py-40">

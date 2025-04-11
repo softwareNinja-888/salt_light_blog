@@ -13,9 +13,9 @@ export const blogData = [
       conclusion: "Remember, no matter the hardship, your faith anchors you and gives you the strength to overcome."
     },
     1,
-    "2025-03-15T08:00:00Z",
-    "2025-03-15T08:00:00Z",
-    "2025-03-15T12:00:00Z",
+    "2025-04-09T08:00:00Z",
+    "2025-04-09T08:00:00Z",
+    "2025-04-09T12:00:00Z",
     "published",
     "A reflective look at how faith in God can provide strength during challenging moments in life.",
     [1, 3],

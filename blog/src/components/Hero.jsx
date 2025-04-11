@@ -39,9 +39,9 @@ export function Hero() {
           variants={itemVariants}
           className="flex flex-col items-center md:items-start justify-center text-center md:text-left w-full lg:w-1/2 md:gap-3 gap-8"
         >
-          <div className="text-3xl md:text-5xl font-poppins text-black">Leap of Faith</div>
-          <div className="text-lg md:text-xl font-mono mt-2 text-black text-black">
-						Trusting God is a lifelong journey. Don’t travel alone. Walk with faith, seek wisdom, and find strength in His word every day.
+          <div className="text-3xl md:text-5xl font-poppins text-black">Daily Bread Blog&#39;s</div>
+          <div className="text-lg md:text-xl font-mono mt-2 text-black">
+						Welcome to a Salt&Light blogs where your knowledge and faith grow deep. Explore God&#39;s  word, share the journey, and be encouraged as you follow Jesus each and everyday.
           </div>
           <motion.div variants={itemVariants} className="mt-0 w-full max-w-md ">
             <Search />
