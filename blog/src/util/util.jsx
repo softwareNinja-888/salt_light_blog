@@ -14,10 +14,10 @@ export const DefaultColumn = ({ children }) => {
     )
   }
   
- export const DefaultInput = ({name='DefaultInput',placeholder='Placeholder',width='w-90'}) => {
+ export const DefaultInput = ({name='DefaultInput',placeholder='Placeholder',width='w-90',setName,style='bg-transparent'}) => {
     return (
       <>
-         <label  htmlFor={`name`} className='mb-[10px] block text-start text-base font-inter600 text-white'>
+         <label  htmlFor={`name`} className='mb-[10px] block text-start text-base font-inter600 text-black'>
           {`${name}`}
         </label>  
         <div className='relative'>
@@ -27,7 +27,7 @@ export const DefaultColumn = ({ children }) => {
             id={`name`}
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className={`${width} bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2`}/>
+            className={`${width} ${style} rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2`}/>
         </div>
       </>
     )
@@ -64,22 +64,10 @@ export const DefaultColumn = ({ children }) => {
     )
   }
   
- export  const NameInput = ({width='w-90',name,setName,section=''}) => {
+  export function NameIcon(){
     return (
       <>
-        <label  htmlFor={`name${section}`} className='mb-[10px] block text-base font-inter600 text-white'>
-          Name
-        </label>
-        <div className='relative'>
-          <input
-            type='text'
-            placeholder='Devid Jhon'
-            id={`name${section}`}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className={`${width} bg-transparent rounded-md border border-stroke py-[10px] pr-3 pl-12 outline-none transition focus:border-greenPrimary active:border-greenPrimary disabled:cursor-default disabled:bg-gray-2 font-extralight text-white`}
-          />
-          <span className='absolute top-1/2 left-4 -translate-y-1/2'>
+           <span className='absolute top-1/2 left-4 -translate-y-1/2'>
             <svg
               width={20}
               height={20}
@@ -96,11 +84,25 @@ export const DefaultColumn = ({ children }) => {
               />
             </svg>
           </span>
-        </div>
       </>
     )
   }
   
+ export  const Input = ({title,type='text',placeholder='John Doe',width='w-90',field,setField,section='',styles=''}) => {
+    return (
+      <>
+         <div className="">
+            <label htmlFor={section} className="mb-[10px] block text-base font-mont text-black">{title}</label>
+            <div className="relative"> 
+                <input type={type} placeholder={placeholder} id={section} value={field} onChange={(e) => setField(e.target.value)} className={`${width} rounded-md border border-black py-[10px] pr-3 pl-12 focus:border-none focus:outline-none focus:ring-2 focus:ring-purple-500 disabled:cursor-default disabled:bg-gray-2 font-extralight text-black`}/>
+                <NameIcon/>
+            </div>
+        </div>
+      </>
+    )
+  }
+
+
  export  const EmailInput = ({width='w-90',email,setEmail,section=''}) => {
     return (
       <>

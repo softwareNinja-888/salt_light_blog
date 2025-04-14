@@ -46,7 +46,8 @@ export function Post({postName='Back to Fiction: What I am reading this year.',
                 <NavLink to={`/blogs/${postInfo.post_id}`} className={`relative group border-1 border-black cursor-pointer ${feature ? 'w-1/3': 'w-full'} `}>
                     {/* BLOG IMAGE */}
                     <div className="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img className="object-cover w-full h-74 transition-all duration-300 group-hover:scale-125" src={  postInfo.img || img  } alt={`${postName} image`} />
+                        <img className="object-cover w-full h-74 transition-all duration-300 group-hover:scale-125" src={postInfo.imgPath() || img  } alt={`${postName} image`} />
+                        {console.log('look:',postInfo.imgPath())}
                     </div>
 
                     {/* NEW STATUS*/}

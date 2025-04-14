@@ -16,7 +16,7 @@ export function Header({
 	const navigate = useNavigate()
 
 	function handleNav(path){
-		navigate(path.toLowerCase())
+		navigate(path.replace(/\s+/g,'').toLowerCase())
 	}
 
     return ( 

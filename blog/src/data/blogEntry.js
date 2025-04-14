@@ -16,7 +16,6 @@ export const BlogUtility = (function(){
     blogCategoryId = [],
     socialLinks = {},
     featured = false,
-    img=`/blog/blogB1.webp`,
     comments=[],
   ) {
     return {
@@ -42,7 +41,11 @@ export const BlogUtility = (function(){
       num_of_likes: 0,
       featured: featured,
       reading_time: Math.ceil(Object.values(content).join(" ").split(" ").length / 200),
-      img,
+      imgPath(wide=false){
+        {console.log('wide:',wide)}
+        return wide ? `/blogImg/0${this.post_id}.avif`: `/blogImg/${this.post_id}.avif`; 
+        // 'https://fakeimg.pl/600x400?text=profile'
+      },
       numOfComments(){
         return this.comments.comments.length
       },
@@ -113,3 +116,14 @@ export const CommentSectionUtility = (function (){
   return {createCommentSection}
 })()
 
+export const ImageUtility = (function(){
+  function createImage(image_id,) {
+    return {
+      image_id,
+      imgPath(){
+        return `blogImg/${this.image_id}.avif`
+      },
+    };
+  }
+  return { createImage };
+})();

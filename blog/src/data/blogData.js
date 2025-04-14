@@ -24,7 +24,6 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/christianfaith"
     },
     true,
-    "/blog/blogA1.webp",
     commentsData[0]
   ),
   BlogUtility.createBlogPost(
@@ -49,7 +48,6 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/prayerjourney"
     },
     false,
-    "/blog/blogB1.webp",
     commentsData[1]
   ),
   BlogUtility.createBlogPost(
@@ -74,7 +72,6 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/biblelight"
     },
     false,
-    "/blog/blogC1.webp",
     commentsData[2]
   ),
   BlogUtility.createBlogPost(
@@ -99,7 +96,6 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/lifeworship"
     },
     true,
-    "/blog/blogD1.webp",
     commentsData[3]
   ),
   BlogUtility.createBlogPost(
@@ -124,7 +120,6 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/godslove"
     },
     false,
-    "/blog/blogE1.webp",
     commentsData[4]
   ),
   BlogUtility.createBlogPost(
@@ -149,7 +144,6 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/christtrials"
     },
     true,
-    "/blog/blogF1.webp",
     commentsData[5]
   ),
   BlogUtility.createBlogPost(
@@ -174,136 +168,134 @@ export const blogData = [
       linkedin: "https://linkedin.com/company/lordslight"
     },
     false,
-    "/blog/blogG1.webp",
     commentsData[6]
   ),
-  BlogUtility.createBlogPost(
-    7,
-    "The Journey of Spiritual Renewal",
-    "the-journey-of-spiritual-renewal",
-    {
-      introduction: "Spiritual renewal is a continuous journey that refreshes the soul and deepens our connection with God.",
-      innerTransformation: "By embracing repentance and forgiveness, we open the door to a new beginning in Christ.",
-      encouragement: "Let every day be an opportunity to renew your spirit and walk with renewed vigor in your faith.",
-      conclusion: "Trust that every step you take in this journey is guided by God’s everlasting grace."
-    },
-    2,
-    "2025-03-22T15:00:00Z",
-    "2025-03-22T15:00:00Z",
-    "2025-03-22T19:00:00Z",
-    "published",
-    "A heartfelt exploration into the transformative journey of renewing one’s spirit in God.",
-    [1, 2],
-    {
-      twitter: "https://twitter.com/renewaljourney",
-      linkedin: "https://linkedin.com/company/renewaljourney"
-    },
-    true,
-    "/blog/blogH1.webp",
-    commentsData[7]
-  ),
-  BlogUtility.createBlogPost(
-    8,
-    "Trusting God in Uncertain Times",
-    "trusting-god-in-uncertain-times",
-    {
-      introduction: "When the future seems unclear, our faith in God provides a sure foundation and a reason for hope.",
-      leaningOnScripture: "Scriptures like Proverbs 3:5-6 remind us to trust in the Lord with all our hearts and lean not on our own understanding.",
-      personalEncouragement: "Many believers have found renewed strength by surrendering their worries to God.",
-      conclusion: "In the midst of uncertainty, trust that God’s plan is perfect and His timing impeccable."
-    },
-    3,
-    "2025-03-23T16:00:00Z",
-    "2025-03-23T16:00:00Z",
-    "2025-03-23T20:00:00Z",
-    "published",
-    "Discover the strength that comes from trusting in God’s plan even when life is unpredictable.",
-    [2, 5],
-    {
-      twitter: "https://twitter.com/trustinggod",
-      linkedin: "https://linkedin.com/company/trustinggod"
-    },
-    false,
-    "/blog/blogI1.webp",
-    commentsData[8]
-  ),
-  BlogUtility.createBlogPost(
-    9,
-    "Renewed by the Spirit",
-    "renewed-by-the-spirit",
-    {
-      introduction: "The Holy Spirit renews us from within, breathing life and hope into every believer’s heart.",
-      experienceOfGrace: "Acts 2 shows how the Spirit came upon the disciples, empowering them to live boldly and spread the Gospel.",
-      modernTestimony: "Today, countless believers testify to the renewing power of the Holy Spirit in their daily lives.",
-      conclusion: "Let the Spirit of God renew your heart, mind, and soul every day."
-    },
-    1,
-    "2025-03-24T17:00:00Z",
-    "2025-03-24T17:00:00Z",
-    "2025-03-24T21:00:00Z",
-    "published",
-    "An inspiring post on how the Holy Spirit brings renewal and transformation to believers’ lives.",
-    [3],
-    {
-      twitter: "https://twitter.com/renewedspirit",
-      linkedin: "https://linkedin.com/company/renewedspirit"
-    },
-    true,
-    "/blog/blogJ1.webp",
-    commentsData[9]
-  ),
-  BlogUtility.createBlogPost(
-    10,
-    "The Blessings of Gratitude",
-    "the-blessings-of-gratitude",
-    {
-      introduction: "Gratitude opens our hearts to the blessings that God pours out each day.",
-      recognizingBlessings: "By counting our blessings, we learn to see God’s hand in every circumstance.",
-      livingThankfully: "A grateful heart is one that trusts in God’s goodness and remains open to His abundant love.",
-      conclusion: "May gratitude lead you to a deeper understanding of God’s grace and a more joyful life."
-    },
-    2,
-    "2025-03-25T18:00:00Z",
-    "2025-03-25T18:00:00Z",
-    "2025-03-25T22:00:00Z",
-    "published",
-    "An exploration of how a thankful heart can transform your life through the recognition of God’s countless blessings.",
-    [1, 4],
-    {
-      twitter: "https://twitter.com/gratefulheart",
-      linkedin: "https://linkedin.com/company/gratefulheart"
-    },
-    false,
-    "/blog/blogK1.webp",
-    commentsData[10]
-  ),
-  BlogUtility.createBlogPost(
-    11,
-    "Steadfast in the Midst of Chaos",
-    "steadfast-in-the-midst-of-chaos",
-    {
-      introduction: "In a world filled with turmoil, being steadfast in faith can bring order to the chaos.",
-      trustingGod: "The Bible reassures us that God is our refuge and strength in times of trouble.",
-      communitySupport: "Sharing our struggles with fellow believers can strengthen our resolve and deepen our faith.",
-      conclusion: "Remain steadfast and let your faith be the calm in the storm, knowing that God is in control."
-    },
-    3,
-    "2025-03-26T19:00:00Z",
-    "2025-03-26T19:00:00Z",
-    "2025-03-26T23:00:00Z",
-    "published",
-    "A call to remain firm in your faith even when life’s storms seem overwhelming.",
-    [2, 3, 5],
-    {
-      twitter: "https://twitter.com/steadfastfaith",
-      linkedin: "https://linkedin.com/company/steadfastfaith"
-    },
-    true,
-    "/blog/blogL1.webp",
-    commentsData[11]
-  )
+  // BlogUtility.createBlogPost(
+  //   7,
+  //   "The Journey of Spiritual Renewal",
+  //   "the-journey-of-spiritual-renewal",
+  //   {
+  //     introduction: "Spiritual renewal is a continuous journey that refreshes the soul and deepens our connection with God.",
+  //     innerTransformation: "By embracing repentance and forgiveness, we open the door to a new beginning in Christ.",
+  //     encouragement: "Let every day be an opportunity to renew your spirit and walk with renewed vigor in your faith.",
+  //     conclusion: "Trust that every step you take in this journey is guided by God’s everlasting grace."
+  //   },
+  //   2,
+  //   "2025-03-22T15:00:00Z",
+  //   "2025-03-22T15:00:00Z",
+  //   "2025-03-22T19:00:00Z",
+  //   "published",
+  //   "A heartfelt exploration into the transformative journey of renewing one’s spirit in God.",
+  //   [1, 2],
+  //   {
+  //     twitter: "https://twitter.com/renewaljourney",
+  //     linkedin: "https://linkedin.com/company/renewaljourney"
+  //   },
+  //   true,
+  //   "/blog/blogH1.webp",
+  //   commentsData[7]
+  // ),
+  // BlogUtility.createBlogPost(
+  //   8,
+  //   "Trusting God in Uncertain Times",
+  //   "trusting-god-in-uncertain-times",
+  //   {
+  //     introduction: "When the future seems unclear, our faith in God provides a sure foundation and a reason for hope.",
+  //     leaningOnScripture: "Scriptures like Proverbs 3:5-6 remind us to trust in the Lord with all our hearts and lean not on our own understanding.",
+  //     personalEncouragement: "Many believers have found renewed strength by surrendering their worries to God.",
+  //     conclusion: "In the midst of uncertainty, trust that God’s plan is perfect and His timing impeccable."
+  //   },
+  //   3,
+  //   "2025-03-23T16:00:00Z",
+  //   "2025-03-23T16:00:00Z",
+  //   "2025-03-23T20:00:00Z",
+  //   "published",
+  //   "Discover the strength that comes from trusting in God’s plan even when life is unpredictable.",
+  //   [2, 5],
+  //   {
+  //     twitter: "https://twitter.com/trustinggod",
+  //     linkedin: "https://linkedin.com/company/trustinggod"
+  //   },
+  //   false,
+  //   "/blog/blogI1.webp",
+  //   commentsData[8]
+  // ),
+  // BlogUtility.createBlogPost(
+  //   9,
+  //   "Renewed by the Spirit",
+  //   "renewed-by-the-spirit",
+  //   {
+  //     introduction: "The Holy Spirit renews us from within, breathing life and hope into every believer’s heart.",
+  //     experienceOfGrace: "Acts 2 shows how the Spirit came upon the disciples, empowering them to live boldly and spread the Gospel.",
+  //     modernTestimony: "Today, countless believers testify to the renewing power of the Holy Spirit in their daily lives.",
+  //     conclusion: "Let the Spirit of God renew your heart, mind, and soul every day."
+  //   },
+  //   1,
+  //   "2025-03-24T17:00:00Z",
+  //   "2025-03-24T17:00:00Z",
+  //   "2025-03-24T21:00:00Z",
+  //   "published",
+  //   "An inspiring post on how the Holy Spirit brings renewal and transformation to believers’ lives.",
+  //   [3],
+  //   {
+  //     twitter: "https://twitter.com/renewedspirit",
+  //     linkedin: "https://linkedin.com/company/renewedspirit"
+  //   },
+  //   true,
+  //   "/blog/blogJ1.webp",
+  //   commentsData[9]
+  // ),
+  // BlogUtility.createBlogPost(
+  //   10,
+  //   "The Blessings of Gratitude",
+  //   "the-blessings-of-gratitude",
+  //   {
+  //     introduction: "Gratitude opens our hearts to the blessings that God pours out each day.",
+  //     recognizingBlessings: "By counting our blessings, we learn to see God’s hand in every circumstance.",
+  //     livingThankfully: "A grateful heart is one that trusts in God’s goodness and remains open to His abundant love.",
+  //     conclusion: "May gratitude lead you to a deeper understanding of God’s grace and a more joyful life."
+  //   },
+  //   2,
+  //   "2025-03-25T18:00:00Z",
+  //   "2025-03-25T18:00:00Z",
+  //   "2025-03-25T22:00:00Z",
+  //   "published",
+  //   "An exploration of how a thankful heart can transform your life through the recognition of God’s countless blessings.",
+  //   [1, 4],
+  //   {
+  //     twitter: "https://twitter.com/gratefulheart",
+  //     linkedin: "https://linkedin.com/company/gratefulheart"
+  //   },
+  //   false,
+  //   // "/blog/blogK1.webp",
+  //   commentsData[10]
+  // ),
+  // BlogUtility.createBlogPost(
+  //   11,
+  //   "Steadfast in the Midst of Chaos",
+  //   "steadfast-in-the-midst-of-chaos",
+  //   {
+  //     introduction: "In a world filled with turmoil, being steadfast in faith can bring order to the chaos.",
+  //     trustingGod: "The Bible reassures us that God is our refuge and strength in times of trouble.",
+  //     communitySupport: "Sharing our struggles with fellow believers can strengthen our resolve and deepen our faith.",
+  //     conclusion: "Remain steadfast and let your faith be the calm in the storm, knowing that God is in control."
+  //   },
+  //   3,
+  //   "2025-03-26T19:00:00Z",
+  //   "2025-03-26T19:00:00Z",
+  //   "2025-03-26T23:00:00Z",
+  //   "published",
+  //   "A call to remain firm in your faith even when life’s storms seem overwhelming.",
+  //   [2, 3, 5],
+  //   {
+  //     twitter: "https://twitter.com/steadfastfaith",
+  //     linkedin: "https://linkedin.com/company/steadfastfaith"
+  //   },
+  //   true,
+  //   "/blog/blogL1.webp",
+  //   commentsData[11]
+  // )
 ];
-
 
 
 

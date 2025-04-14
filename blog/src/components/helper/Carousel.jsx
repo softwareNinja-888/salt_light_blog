@@ -47,7 +47,7 @@ function BlogCard({ blog }) {
           onClick={()=>{handleNav(blog)}}
         >
           <img 
-            src={blog.img} 
+            src={blog.imgPath() || 'https://fakeimg.pl/600x400?text=profile'} 
             alt={blog.title} 
             className="w-full h-40 object-cover"
           />

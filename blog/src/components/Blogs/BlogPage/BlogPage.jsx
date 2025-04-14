@@ -64,7 +64,7 @@ export function BlogPage(){
                           {blogInfo.summary}
                         </div>
                         <div className="">
-                            <img src={blogInfo.img} alt="blog Image" className="h-52 md:h-[400px] lg:h-[500px] w-full"/>    
+                            <img src={blogInfo.imgPath(true) || 'https://fakeimg.pl/600x400?text=profile'} alt="blog Image" className="h-52 md:h-[400px] lg:h-[500px] w-full"/>    
                         </div>  
 
                         {sections.map(section=>{
@@ -81,9 +81,6 @@ export function BlogPage(){
                         })}
                     </div>
                 </div>
-
-
-                {}
 
                 {/*GENRE*/}
                 <div className='flex gap-1 text-xs px-3 font-poppins mt-10'>

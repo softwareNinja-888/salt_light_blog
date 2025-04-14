@@ -13,7 +13,7 @@ import { PageScrollToTop } from './components/helper/PageScrollToTop.jsx'
 import { Layout } from './components/Layout.jsx';
 import { BlogDisplay } from './components/Blogs/BlogDisplay.jsx';
 import { BlogPage } from './components/Blogs/BlogPage/BlogPage.jsx';
-import { Signin } from './components/Signin/Signin.jsx';
+import { SignUp } from './components/Signin/SignUp.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -27,8 +27,8 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path='/' element={<Layout/>}>
             <Route index element={<App/>}/>
-            <Route path='signin'>
-              <Route index element={<Signin/>}/>
+            <Route path='/login/signup'>
+              <Route index element={<SignUp/>}/>
               {/* <Route path='signup' element={<Signup/>}/> */}
             </Route>
             <Route path='blogs'>

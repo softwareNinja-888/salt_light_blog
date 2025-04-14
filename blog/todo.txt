@@ -2,18 +2,15 @@ TODO
 
 Salt Blog
     -Login/SignUp page (Demo profile login info) #1
-
     -Comment functionality #7
+    
     -Like functionality #8
-
     -Search functionality #9
-    -Newsletter functionality #10
 
+    -Newsletter functionality #10
     -Footer #11
         -Copy & functionality
 
-    -Carosuel Blog page #12
-    -Blog menu functionality #14
     -At the end add better blogs copy. 
         
 Web solutions
@@ -59,3 +56,7 @@ Projects
 
 Marketing Campaign
     -Get list of potential cilents that fulfill criteria
+    
+    
+    
+    
