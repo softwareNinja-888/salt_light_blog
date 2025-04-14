@@ -24,9 +24,9 @@ export function MobileMenu({ menuOpen, setMenuOpen,links=[''] }){
   // HANDLE NAVIGATION:
 
   const navigate = useNavigate()
-
+  
   function handleNav(path){
-		navigate(path.toLowerCase())
+		navigate(path.replace(/\s+/g,'').toLowerCase())
     setMenuOpen(!menuOpen)
 	}
 
